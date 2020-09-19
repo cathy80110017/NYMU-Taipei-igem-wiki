@@ -1,145 +1,47 @@
-{{Template:NYMU-Taipei/css/reset.css}}
-{{Template:NYMU-Taipei/css/bulma.css}}
-
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>iGem</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./plugins/jquery-3.5.1.min.js"></script>
+    <link rel=stylesheet type="text/css" href="./plugins/bootstrap.css">
+    <script type="text/javascript" src="./plugins/bootstrap.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'poppins';
+            src: url("./plugins//poppins/Poppins-Regular.ttf");
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url('./plugins/poppins/Poppins-Bold.ttf');
+            font-weight: bold;
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url(./plugins/poppins/Poppins-Light.ttf);
+            font-weight: lighter;
+        }
+        @font-face {
+            font-family: 'poppins';
+            src: url(./plugins/poppins/Poppins-MediumItalic.ttf);
+            font-weight: normal;
+            font-style: italic;
+        }
+    </style>
+
 </head>
 
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/Team:NYMU-Taipei">
-        <b>
-          NYMU-Taipei
-        </b>
-      </a>
+    <div id="navbar" style="font-family:poppins; font-weight: bold;"></div>
 
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+    <script>
+        $(function () {
+            $("#navbar").load("./components/navbar.html");
+        })
+    </script>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Team
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Member
-            </a>
-            <a class="navbar-item">
-              Collaboration
-            </a>
-            <a class="navbar-item">
-              Attribution
-            </a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Project
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Description
-            </a>
-            <a class="navbar-item">
-              Design
-            </a>
-            <a class="navbar-item">
-              Experiment
-            </a>
-            <a class="navbar-item">
-              Model
-            </a>
-            <a class="navbar-item">
-              Interlab
-            </a>
-          </div>
-        </div>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Parts
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Overview
-            </a>
-            <a class="navbar-item">
-              Basic Outs
-            </a>
-            <a class="navbar-item">
-              Composite Parts
-            </a>
-            <a class="navbar-item">
-              Collection
-            </a>
-            <a class="navbar-item">
-              Improvement
-            </a>
-          </div>
-        </div>
-
-        <a class="navbar-item">
-          Safety
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            HP
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Human Practice
-            </a>
-            <a class="navbar-item">
-              Education
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
-        });
-      }
-
-    });
-  </script>
 </body>
 
 </html>
