@@ -42,11 +42,18 @@
             flex-direction: column;
             align-content: center;
             justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 1.25rem;
+            min-height: 500px;
+            min-width: 265px;
+            max-width: 320px;
+            box-shadow: 0 0 11px rgba(33, 33, 33, .2);
             transition: box-shadow .3s;
         }
 
         .box:hover {
-            box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+            box-shadow: 0 0 11px rgba(10, 10, 10, 0.3);
         }
 
         .upper-box {
@@ -54,7 +61,7 @@
             align-content: center;
             justify-content: center;
             background-color: #52b098;
-            height: 70%;
+            height: 75%;
             min-height: 180px;
         }
 
@@ -64,8 +71,25 @@
             justify-content: center;
             height: 25%;
             font-weight: bold;
-            font-size: 20px;
-            background-color: #f5f5f5;
+            font-size: 26px;
+            background-color: white;
+        }
+
+        .move-object {
+            width: 4vw;
+            animation: MoveUpDown 3s linear infinite;
+        }
+
+        @keyframes MoveUpDown {
+            0%, 100% {
+                transform: translateY(-2vh);
+            }
+            25%, 75% {
+                transform: translateY(2vh);
+            }
+            50% {
+                transform: translateY(8vh);
+            }
         }
     </style>
 </head>
@@ -78,53 +102,56 @@
             <div style="position: relative;" class="d-flex justify-content-center">
                 <img src="../assets/img/covid_world.jpg" style="width: 100%; z-index: 0;">
                 <div class="title-size"
-                    style="color: white; position: absolute; top: calc(100% - 80px); font-weight: bold;">Off the Crown
+                    style="color: white; position: absolute; top: calc(100% - 120px); font-weight: bold; font-size: 64px;">Off the Crown
                 </div>
             </div>
-            <img src="../assets/img/logo_main.png" style=" width: 35vw; position: absolute; z-index: 1;">
+            <img src="../assets/img/logo_main.png" style=" width: 30vw; position: absolute; z-index: 1;">
         </div>
 
-        <div class="title-size text-center" style="font-weight: bold;">NYMU - Taipei</div>
-        <div class="d-flex justify-content-center pt-4 pb-5" style="width: 100%;">
-            <img src="../assets/icon/icon_scroll_down.svg" style="width: 4vw;">
+        <div class="title-size text-center" style="font-weight: bold; font-size: 64px; color: rgb(77, 77, 77);">NYMU - Taipei</div>
+        <div class="d-flex justify-content-center pt-4 pb-5" style="width: 100%; height: 200px;">
+            <img src="../assets/icon/icon_scroll_down.svg" class="move-object">
         </div>
         <hr class="align-content-center" style="width: 20vw; height: 8px; background-color: black;">
         <div class="text-center p-5" style="font-size: 30px;">As of today, 29,584,331 cases have been reported for this
             highly infectious disease. Therefore, we have developed a brand new approach to capture and detect the
             notorious Covid-19</div>
         <hr class="align-content-center" style="width: 20vw; height: 8px; background-color: black;">
-        <div class="d-flex flex-wrap justify-content-around mb-5 pb-5 pt-5 p-5">
-            <div class="box col-6 col-lg-3 pl-2 pr-2" href="#">
-                <div class="upper-box">
-                    <img src="../assets/icon/icon_description.svg" class="p-4 d-flex" style="width: 90%;">
+        <div class="d-flex flex-wrap justify-content-around mb-5 pb-5 pt-5">
+            <div class="d-flex flex-wrap justify-content-around" style="width: 82%;" >
+                <div class="box col-12 col-sm-6 col-xl-3" href="#">
+                    <div class="upper-box">
+                        <img src="../assets/icon/icon_description.svg" class="p-4 d-flex" style="width: 65%;">
+                    </div>
+                    <div class="lower-box p-2">
+                        <span>Description</span>
+                    </div>
                 </div>
-                <div class="lower-box p-2 ">
-                    <span>Description</span>
+                <div class="box col-12 col-sm-6 col-xl-3" href="#">
+                    <div class="upper-box">
+                        <img src="../assets/icon/icon_solution.svg" class="p-4 d-flex" style=" width: 65%;">
+                    </div>
+                    <div class="lower-box p-2">
+                        <span class="">Solution</span>
+                    </div>
+                </div>
+                <div class="box col-12 col-sm-6 col-xl-3" href="#">
+                    <div class="upper-box">
+                        <img src="../assets/icon/icon_prospect.svg" class="p-4 d-flex" style=" width: 65%;">
+                    </div>
+                    <div class="lower-box p-2">
+                        <span> Prospect </span></div>
+                </div>
+                <div class="box col-12 col-sm-6 col-xl-3" href="#">
+                    <div class="upper-box">
+                        <img src="../assets/icon/icon_human_practices.svg" class="p-4" style=" width: 65%;">
+                    </div>
+                    <div class="lower-box p-2">
+                        <span> Human <br> practice </span>
+                    </div>
                 </div>
             </div>
-            <div class="box col-6 col-lg-3 pl-2 pr-2" href="#">
-                <div class="upper-box">
-                    <img src="../assets/icon/icon_solution.svg" class="p-4 d-flex" style=" width: 90%;">
-                </div>
-                <div class="lower-box p-2">
-                    <span class="">Solution</span>
-                </div>
-            </div>
-            <div class="box col-6 col-lg-3 pl-2 pr-2" href="#">
-                <div class="upper-box">
-                    <img src="../assets/icon/icon_prospect.svg" class="p-4 d-flex" style=" width: 90%;">
-                </div>
-                <div class="lower-box p-2">
-                    <span> Prospect </span></div>
-            </div>
-            <div class="box col-6 col-lg-3 pl-2 pr-2" href="#">
-                <div class="upper-box">
-                    <img src="../assets/icon/icon_human_practices.svg" class="p-4" style=" width: 90%;">
-                </div>
-                <div class="lower-box p-2">
-                    <span> Human <br> practice </span>
-                </div>
-            </div>
+
         </div>
 
         <div id="footer" class="width: 100%;"></div>
