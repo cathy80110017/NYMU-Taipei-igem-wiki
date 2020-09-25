@@ -45,8 +45,8 @@
             padding-left: 0;
             padding-right: 0;
             margin: 1.25rem;
-            min-height: 500px;
-            min-width: 265px;
+            min-height: 480px;
+            min-width: 300px;
             max-width: 320px;
             box-shadow: 0 0 11px rgba(33, 33, 33, .2);
             transition: box-shadow .3s;
@@ -73,6 +73,10 @@
             font-weight: bold;
             font-size: 26px;
             background-color: white;
+        }
+
+        .lower-box span{
+            line-height: 110px;
         }
 
         .move-object {
@@ -118,40 +122,43 @@
             notorious Covid-19</div>
         <hr class="align-content-center" style="width: 20vw; height: 8px; background-color: black;">
         <div class="d-flex flex-wrap justify-content-around mb-5 pb-5 pt-5">
-            <div class="d-flex flex-wrap justify-content-around" style="width: 82%;" >
-                <div class="box col-12 col-sm-6 col-xl-3" href="#">
-                    <div class="upper-box">
-                        <img src="../assets/icon/icon_description.svg" class="p-4 d-flex" style="width: 65%;">
+            <div class="d-flex flex-wrap justify-content-around" style="width: 82%;">
+                <div class="d-flex flex-wrap justify-content-around col-12 col-md-6 p-0" style="width: 50%">
+                    <div class="box col-12 col-md-6 col-lg-3 " href="#">
+                        <div class="upper-box">
+                            <img src="../assets/icon/icon_description.svg" class="p-4 d-flex" style="width: 65%;">
+                        </div>
+                        <div class="lower-box p-2">
+                            <span>Description</span>
+                        </div>
                     </div>
-                    <div class="lower-box p-2">
-                        <span>Description</span>
-                    </div>
+                    <div class="box col-12 col-md-6 col-lg-3" href="#">
+                        <div class="upper-box">
+                            <img src="../assets/icon/icon_solution.svg" class="p-4 d-flex" style=" width: 65%;">
+                        </div>
+                        <div class="lower-box p-2">
+                            <span class="">Solution</span>
+                        </div>
+                    </div>                    
                 </div>
-                <div class="box col-12 col-sm-6 col-xl-3" href="#">
-                    <div class="upper-box">
-                        <img src="../assets/icon/icon_solution.svg" class="p-4 d-flex" style=" width: 65%;">
+                <div class="d-flex flex-wrap justify-content-around col-12 col-md-6 p-0" style=" width: 50%">
+                    <div class="box col-12 col-md-6 col-lg-3" href="#">
+                        <div class="upper-box">
+                            <img src="../assets/icon/icon_prospect.svg" class="p-4 d-flex" style=" width: 65%;">
+                        </div>
+                        <div class="lower-box p-2">
+                            <span> Prospect </span></div>
                     </div>
-                    <div class="lower-box p-2">
-                        <span class="">Solution</span>
-                    </div>
-                </div>
-                <div class="box col-12 col-sm-6 col-xl-3" href="#">
-                    <div class="upper-box">
-                        <img src="../assets/icon/icon_prospect.svg" class="p-4 d-flex" style=" width: 65%;">
-                    </div>
-                    <div class="lower-box p-2">
-                        <span> Prospect </span></div>
-                </div>
-                <div class="box col-12 col-sm-6 col-xl-3" href="#">
-                    <div class="upper-box">
-                        <img src="../assets/icon/icon_human_practices.svg" class="p-4" style=" width: 65%;">
-                    </div>
-                    <div class="lower-box p-2">
-                        <span> Human <br> practice </span>
-                    </div>
+                    <div class="box col-12 col-md-6 col-lg-3" href="#">
+                        <div class="upper-box">
+                            <img src="../assets/icon/icon_human_practices.svg" class="p-4" style=" width: 65%;">
+                        </div>
+                        <div class="lower-box p-2">
+                            <span> Human practice </span>
+                        </div>
+                    </div>                    
                 </div>
             </div>
-
         </div>
 
         <div id="footer" class="width: 100%;"></div>
