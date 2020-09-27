@@ -5,130 +5,44 @@
     <title>iGem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
-    <link rel=stylesheet type="text/css" href="./css/bootstrap.css">
     <script type="text/javascript" src="./js/bootstrap.js"></script>
-
-    <style>
-        @font-face {
-            font-family: 'poppins';
-            src: url("../assets/WS-basic/poppins/Poppins-Regular.ttf");
-        }
-
-        @font-face {
-            font-family: 'poppins';
-            src: url('../assets/WS-basic/poppins/Poppins-Bold.ttf');
-            font-weight: bold;
-        }
-
-        @font-face {
-            font-family: 'poppins';
-            src: url('../assets/WS-basic/poppins//Poppins-Light.ttf');
-            font-weight: lighter;
-        }
-
-        @font-face {
-            font-family: 'poppins';
-            src: url('../assets/WS-basic/poppins/Poppins-MediumItalic.ttf');
-            font-weight: normal;
-            font-style: italic;
-        }
-
-        body {
-            font-family: poppins;
-        }
-
-        .font-bold {
-            font-weight: bold;
-        }
-
-        .title-size {
-            font-size: 3rem;
-        }
-
-        .box {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            padding-left: 0;
-            padding-right: 0;
-            margin: 1.25rem;
-            min-height: 480px;
-            min-width: 300px;
-            max-width: 320px;
-            box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-            transition: box-shadow .3s;
-        }
-
-        .box:hover {
-            box-shadow: 0 0 11px rgba(10, 10, 10, 0.3);
-        }
-
-        .upper-box {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            background-color: #52b098;
-            height: 75%;
-            min-height: 180px;
-        }
-
-        .lower-box {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            height: 25%;
-            font-weight: bold;
-            font-size: 26px;
-            background-color: white;
-        }
-
-        .lower-box span{
-            line-height: 110px;
-        }
-
-        .move-object {
-            width: 4vw;
-            animation: MoveUpDown 3s linear infinite;
-        }
-
-        @keyframes MoveUpDown {
-            0%, 100% {
-                transform: translateY(-2vh);
-            }
-            25%, 75% {
-                transform: translateY(2vh);
-            }
-            50% {
-                transform: translateY(8vh);
-            }
-        }
-    </style>
+    <link rel=stylesheet type="text/css" href="./css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="./css/style.css">
 </head>
 
 <body>
     <div id="navbar"></div>
-    <div id="homepage" class="container-fluid px-0"
-        style="min-width: 100%; margin-top: 62px; width: 100%; background-color: #fff;">
-        <div style="position: relative;" class="d-flex align-items-center justify-content-center flex-column-reverse">
-            <div style="position: relative;" class="d-flex justify-content-center">
-                <img src="../assets/img/covid_world.jpg" style="width: 100%; z-index: 0;">
-                <div class="title-size"
-                    style="color: white; position: absolute; top: calc(100% - 120px); font-weight: bold; font-size: 64px;">Off the Crown
-                </div>
-            </div>
-            <img src="../assets/img/logo_main.png" style=" width: 30vw; position: absolute; z-index: 1;">
-        </div>
 
-        <div class="title-size text-center" style="font-weight: bold; font-size: 64px; color: rgb(77, 77, 77);">NYMU - Taipei</div>
-        <div class="d-flex justify-content-center pt-4 pb-5" style="width: 100%; height: 200px;">
+    <div id="bg-covid-world">
+        <div class="main-logo-container">
+            <img id="main-logo" src="../assets/img/logo_main.png">
+        </div>
+    </div>
+
+    <div class="title-container">
+        <h1 class="main-title text-white text-center text-bold">
+            Off the Crown
+        </h1>
+        <h1 class="main-title text-center text-bold text-dark">
+            NYMU - Taipei
+        </h1>
+    </div>
+
+
+    <div class="container">
+        <div class="container text-center">
             <img src="../assets/icon/icon_scroll_down.svg" class="move-object">
         </div>
-        <hr class="align-content-center" style="width: 20vw; height: 8px; background-color: black;">
-        <div class="text-center p-5" style="font-size: 30px;">As of today, 29,584,331 cases have been reported for this
+
+        <hr class="align-content-center divide-line rounded">
+
+        <h3 class="text-center p-5 text-bold">
+            As of today, 29,584,331 cases have been reported for this
             highly infectious disease. Therefore, we have developed a brand new approach to capture and detect the
-            notorious Covid-19</div>
-        <hr class="align-content-center" style="width: 20vw; height: 8px; background-color: black;">
+            notorious Covid-19
+        </h3>
+        <hr class="align-content-center divide-line rounded">
+
         <div class="d-flex flex-wrap justify-content-around mb-5 pb-5 pt-5">
             <div class="d-flex flex-wrap justify-content-around" style="width: 82%;">
                 <div class="d-flex flex-wrap justify-content-around col-12 col-md-6 p-0" style="width: 50%">
@@ -168,9 +82,10 @@
                 </div>
             </div>
         </div>
-
-        <div id="footer" class="width: 100%;"></div>
     </div>
+
+
+    <footer id="footer"></footer>
 
 
     <script>

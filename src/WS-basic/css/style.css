@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'poppins';
+    src: url("../../assets/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/poppins/Poppins-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/poppins/Poppins-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/poppins/Poppins-MediumItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: poppins;
+}
+
+/* NAVBAR */
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/* HOMEPAGE */
+
+#bg-covid-world {
+    background-color: gray;
+    background-image: url("../../assets/img/covid_world.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.main-logo-container {
+    height: 100%;
+}
+
+.main-logo-container > img {
+    position: absolute;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+}
+
+.title-container {
+    margin-top: -6.75rem;
+}
+
+.main-title {
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+.divide-line {
+    width: 80px;
+    height: 4px;
+    background-color: black;
+}
+
+/* BOX AREA */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1.25rem;
+    min-height: 480px;
+    min-width: 300px;
+    max-width: 320px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    transition: box-shadow .3s;
+}
+
+.box:hover {
+    box-shadow: 0 0 11px rgba(10, 10, 10, 0.3);
+}
+
+.upper-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #52b098;
+    height: 75%;
+    min-height: 180px;
+}
+
+.lower-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 25%;
+    font-weight: bold;
+    font-size: 26px;
+    background-color: white;
+}
+
+.lower-box span{
+    line-height: 110px;
+}
+
+/* FOOTER */
+
+.footer-info {
+    background-color: #52b098;
+}
+
+/* ICONS */
+
+svg {
+    display: inline;
+}
+
+.icon-email {
+    background-image: url("../../assets/icon/icon_email.svg");
+    fill: #fff;
+}
+
+
+/* MOVING ARROW */
+
+.move-object {
+    width: 1.5rem;
+    animation: MoveUpDown 3s linear infinite;
+    margin-bottom: 3rem;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(-5px);
+    }
+    25%, 75% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+
+/* MISC */
+
+.text-bold {
+    font-weight: bold;
+}
