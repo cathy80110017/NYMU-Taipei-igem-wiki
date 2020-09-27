@@ -24,6 +24,7 @@
 
 body {
     font-family: poppins;
+    color: #363636;
 }
 
 /* NAVBAR */
@@ -40,12 +41,20 @@ body {
 /* HOMEPAGE */
 
 #bg-covid-world {
-    background-color: gray;
-    background-image: url("../../assets/img/covid_world.jpg");
+    position: relative;
+    background-image: url("../../assets/img/home_covid_world.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+}
+
+.dark-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #030303;
+    opacity: 0.5;
 }
 
 .main-logo-container {
@@ -59,7 +68,7 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 20%;
+    top: 30%;
     text-align: center;
 }
 
@@ -68,10 +77,11 @@ body {
 }
 
 .main-title {
+    position: relative;
+    z-index: 1;
     font-size: 4rem;
     padding: 1rem;
     margin: 0;
-
 }
 
 /* BRIEFING SECTION */
@@ -201,11 +211,11 @@ svg {
     /* TITLE AREA */
 
     .title-container {
-        margin-top: -5.5rem;
+        margin-top: -4.5rem;
     }
 
     .main-title {
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 1rem;
         margin: 0;
     }
