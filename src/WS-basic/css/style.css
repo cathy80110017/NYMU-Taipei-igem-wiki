@@ -74,6 +74,13 @@ body {
 
 }
 
+/* BRIEFING SECTION */
+
+#briefing-section > div > h3 {
+    font-size: 1.5rem;
+}
+
+
 .divide-line {
     width: 80px;
     height: 4px;
@@ -81,6 +88,24 @@ body {
 }
 
 /* BOX AREA */
+
+.bg-green {
+    background-color: #52b098;
+    margin: 0;
+}
+
+.home-info-card {
+    padding: none;
+}
+
+.home-info-card > div:first-child {
+    height: 300px;
+}
+
+.home-info-card > div:first-child > img {
+    max-width: 60%;
+}
+
 
 .box {
     display: flex;
@@ -90,9 +115,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 1.25rem;
-    min-height: 480px;
-    min-width: 300px;
-    max-width: 320px;
+    height: 500px;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     transition: box-shadow .3s;
 }
@@ -103,31 +126,34 @@ body {
 
 .upper-box {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-color: #52b098;
-    height: 75%;
-    min-height: 180px;
+    height: 60%;
 }
 
 .lower-box {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    height: 25%;
-    font-weight: bold;
+    height: 40%;
     font-size: 26px;
     background-color: white;
 }
 
 .lower-box span{
-    line-height: 110px;
+    font-size: 2rem;
 }
 
 /* FOOTER */
 
 .footer-info {
     background-color: #52b098;
+}
+
+.footer-sponsors img {
+    width: 100%;
+    height: auto;
 }
 
 /* ICONS */
@@ -167,4 +193,33 @@ svg {
 
 .text-bold {
     font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* TITLE AREA */
+
+    .title-container {
+        margin-top: -5.5rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    /* BRIEFING SECTION */
+
+    #briefing-section > div > h3 {
+        font-size: 1rem;
+    }
+
+    /* BOX */
+
+    .box {
+        height: 400px;
+
+    }
 }
