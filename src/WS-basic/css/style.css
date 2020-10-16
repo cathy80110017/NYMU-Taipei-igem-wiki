@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'poppins';
-    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Regular.ttf");
+    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Medium.ttf");
 }
 
 @font-face {
@@ -43,20 +43,29 @@ h3 {
     height: 4px;
 }
 
-.main-title {
+.h1 {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.title {
+.h2 {
     font-size: 2rem;
     font-weight: bold;
+    margin: 0;
+}
+
+.indent {
+    text-indent: 2rem;
 }
 
 .img-style {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#description-solution-img {
+    margin-top: -2rem;
 }
 
 /* Reference */
@@ -81,4 +90,11 @@ h3 {
 
 svg {
     display: inline;
+}
+
+/* UTILITIES */
+
+hr {
+    border-style: solid;
+    border-color: #2C2C2C;
 }
