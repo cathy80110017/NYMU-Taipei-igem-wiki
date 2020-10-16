@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/style.css">
+    <link rel=stylesheet type="text/css" href="../css/design.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+
+    <div class="container text-container" data-spy="scroll">
+        <div class="main-title">
+            Design
+        </div>
+        <hr class="divide-line">
+
+        <div id="Inspiration">
+            <div class="py-3 title">
+                Overview
+            </div>
+            <section class="pb-4">
+                <div class="row">
+                    <div class="py-3 col-12">
+                        Our design idea is to capture and denature the SARS-CoV-2 using our customized protein. We chose
+                        the receptor-binding domain (RBD) of human angiotensin-converting enzyme 2 (hACE2) as the
+                        capturer of SARS-CoV-2. The spike protein on the surface of the virus could bind with hACE2(RBD)
+                        and enter host cells via this mechanism. Moreover, we attached a protease to the bottom of the
+                        hACE2(RBD) to denature the spike proteins captured. By doing so, we could not only create an
+                        effective protective surface against SARS-CoV-2 but also deactivate the virus we captured
+                        simultaneously. The following paragraph will get into more detail about the procedures of our
+                        experiment.
+                    </div>
+                </div>
+            </section>
+            <div class="py-3 title">
+                Capturing
+            </div>
+            <section class="pb-4">
+                <div class="row">
+                    <div class="py-3 col-12 col-md-8">
+                        It has been proven that the receptor-binding domain of the spike protein of SARS-CoV-2 can bind
+                        to the cell receptor ACE2 when infecting human beings(see figure below). By utilizing this fact,
+                        we design our device to capture SARS-CoV-2 by hACE2 when the virus passes our device. To be more
+                        specific, we put hACE2 on gel made by us for detection, and we connect hACE2 and pepP together
+                        for inactivation.
+                    </div>
+                    <div class="py-3 col-12 col-md-4 img-style">
+                        <img src="/src/assets/img/design_capturing.png" class="img-width">
+                    </div>
+                </div>
+            </section>
+            <div class="py-3 title">
+                Detection
+            </div>
+            <section class="pb-4">
+                <div class="row">
+                    <div class="py-3 col-12 col-md-8">
+                        We designed a tiny box which can detect if there is SARS-CoV-2 in the user’s breathe. Inside the
+                        box, there is a piece of gel with hACE2. We add His tag on hACE2 so that His tag on hACE2 can
+                        chelate with Co2+; therefore, can be presented on the surface of our gel with Co2+. Meanwhile,
+                        we add red fluorescent protein(RFP) to hACE2 construct in order to show if one has SARS-CoV-2.
+                        Firstly, we would let the user blow in our device. After one blowing in our device, the gel with
+                        hACE2 would capture spike protein as mentioned above, if any, and then we use wash buffer to
+                        wash off hACE2 without spike. Lastly, only hACE2 with spike would be left on the gel, and RFP
+                        would show if one is infected with SARS-CoV-2 and attain detection.
+                    </div>
+                    <div class="py-3 col-12 col-md-4 img-style">
+                        <img src="/src/assets/img/design_detection.png" class="img-width">
+                    </div>
+                </div>
+            </section>
+            <div class="py-3 title">
+                Inactivating
+            </div>
+            <section class="pb-4">
+                <div class="row">
+                    <div class="py-3 col-12 col-md-8">
+                        We want to inactivate SARS-CoV-2 by preventing the virus from entering our cell. To achieve this
+                        goal, we came up with an idea which is using a protease to cut spike protein of SARS-CoV-2.
+                        Research indicated that pepP could be the appropriate protease, so we add pepP to hACE2
+                        construct. In ideal situation, pepP would cut spike which is captured by hACE2, and thus make
+                        the virus unable to infect us.
+                    </div>
+                    <div class="py-3 col-12 col-md-4 img-style">
+                        <img src="/src/assets/img/design_inactivating.png" class="img-width">
+                    </div>
+                </div>
+            </section>
+            <section class="pb-4">
+                <div class="row">
+                    <div class="py-3 col-12">
+                        <h3 class="py-3">Reference</h3>
+                        <div class="pl-0 list">
+                            1.https://www.nature.com/articles/s41586-020-2180-5<br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
+            // $('body').scrollspy({ target: '.navbar-example' })
+    </script>
+</body>
+
+</html>
