@@ -7,8 +7,8 @@
     <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-    <link rel=stylesheet type="text/css" href="../css/style.css">
-    <link rel=stylesheet type="text/css" href="../css/description.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
 </head>
 
 <body>
@@ -32,22 +32,22 @@
             </li>
         </ul>
     </nav> -->
-    <div  class="container text-container" data-spy="scroll">
-        <div class="h1 py-5">
-            Description
-            <hr class="divide-line">
+    <div id="main-container" class="container" data-spy="scroll">
+        <div class="py-5">
+            <h3>Description</h3>
+            <hr class="heading-underline">
         </div>
 
 
-        <div id="Background">
-            <div class="h2 pt-2 pb-3">
+        <section id="Background">
+            <h4 class="pt-2 pb-3">
                 Background - COVID-19
-            </div>
+            </h4>
 
-            <section class="pb-4">
+            <section id="prevalence" class="pb-4">
                 <div class="row">
                     <div class="py-3 col-12 col-md-8">
-                        <h3 class="py-2">Prevalence</h3>
+                        <h5 class="py-2">Prevalence</h5>
                         <p class="indent">
                             Coronovirus diesease 2019, also known as COVID-19, is an infectious disease caused by the virus,
                             SARS-CoV-2. The disease was first identified in 2019 Wuhan, Hubei, China, and has since spread
@@ -82,10 +82,10 @@
                     </div>
                 </div>
             </section>
-            <section class="pb-4">
+            <section id="transmission" class="pb-4">
                 <div class="row">
                     <div class="py-3 col-12 col-md-6">
-                        <h3 class="py-2">Transmission</h3>
+                        <h5 class="py-2">Transmission</h5>
                         <p class="indent">
                             The prevalence of COVID-19 as we mentioned above is mainly due in part to its transmission
                             mechanics.
@@ -108,10 +108,10 @@
                     </div>
                 </div>
             </section>
-            <section class="pb-4">
+            <section id="pathogenesis" class="pb-4">
                 <div class="row">
                     <div class="py-3 col-12">
-                        <h3 class="py-2">Pathogenesis</h3>
+                        <h5 class="py-2">Pathogenesis</h5>
                         <p class="indent">
                             COVID-19 mainly affects the respiratory system, including the upper respiratory tract (sinuses,
                             nose,
@@ -143,12 +143,12 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
         <hr>
-        <div id="Solution">
-            <div class="py-3 h2">
+        <section id="solution">
+            <h4 class="py-3">
                 Our Solution
-            </div>
+            </h4>
             <section class="pb-4">
                 <div class="row">
                     <div class="col-12">
@@ -168,7 +168,6 @@
                             viral evolution and come up with a more affordable solution.<br>
                         </p>
                     </div>
-<<<<<<< HEAD
                 </div>
                 <div class="row">
                     <div class="py-3 col-12 col-md-9">
@@ -202,17 +201,19 @@
                     </div>
 
                     <div class="col-12 col-md-3 img-style">
-                        <img src="/src/assets/img/description_solution.png" class="img-fluid" id="description-solution-img">
+                        <img src="/src/assets/img/description_solution.png" class="img-fluid mt--2">
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
+
         <hr>
-        <div id="Inspiration">
-            <div class="py-3 h2">
+
+        <section id="inspiration">
+            <h4 class="py-3">
                 Inspiration
-            </div>
-            <section class="pb-4">
+            </h4>
+            <div class="pb-4">
                 <div class="row">
                     <div class="py-3 col-12 col-md-8">
                         <p class="indent">
@@ -246,37 +247,38 @@
                         <img src="/src/assets/img/description_inspitration.png" class="img-fluid">
                     </div>
                 </div>
-            </section>
-            <hr>
-            <section class="pb-4">
-                <div class="row">
-                    <div class="py-3 col-12">
-                        <h3 class="py-3">References</h3>
-                        <ol class="list">
-                            <li>Coronavirus disease 2019 (COVID-19): Epidemiology, virology, and prevention; Retrieved from https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19-vepidemiology-virology-and-prevention</li>
-                            <li>Coronavirus Disease 2019 (COVID-19); Retrieved from https://emedicine.medscape.com/article/2500114-overview#a1</li>
-                            <li>Coronavirus Disease (COVID-19); Retrieved from https://www.physio-pedia.com/Coronavirus_Disease_(COVID-19)
-                            </li>
-                            <li>COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU); Retrieved from https://coronavirus.jhu.edu/map.html</li>
-                            <li> 10 Reasons to Doubt the Covid-19 Data; Retrieved from https://www.bloomberg.com/opinion/articles/2020-04-13/ten-reasons-to-doubt-the-covid-19-data</li>
-                            <li>COVID-19 to Plunge Global Economy into Worst Recession since World War II; Retrieved from https://www.worldbank.org/en/news/press-release/2020/06/08/covid-19-to-plunge-global-economy-into-worst-recession-since-world-war-ii</li>
-                            <li>SARS-CoV-2 Transmission; Retrieved from https://www.worldometers.info/coronavirus/transmission/
-                            </li>
-                            <li>How Does Coronavirus Spread?; Retrieved from https://www.webmd.com/lung/coronavirus-transmission-overview#1
-                            </li>
-                            <li>Cheng-wei Lu, Xiu-fen Liu, Zhi-fang Jia (2020) 2019-nCoV transmission through the ocular surface must not be ignored. doi: https://doi.org/10.1016/S0140-6736(20)30313-5
-                            </li>
-                            <li>I Hamming, W Timens, MLC Bulthuis, AT Lely, GJ Navis, and H van Goor (2004) Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis. doi: 10.1002/path.1570</li>
-                            <li>Koichi Yuki, Miho Fujiogi, and Sophia Koutsogiannaki (2020) COVID-19 pathophysiology: A review. doi: 10.1016/j.clim.2020.108427
-                            </li>
-                            <li>Tai, W., He, L., Zhang, X. et al. Characterization of the receptor-binding domain (RBD) of 2019 novel coronavirus: implication for development of RBD protein as a viral attachment inhibitor and vaccine. Cell Mol Immunol 17, 613–620 (2020). https://doi.org/10.1038/s41423-020-0400-4</li>
-                            <li>Wikipedia Coronavirus Disease 2019; Retrieved from https://en.wikipedia.org/wiki/Coronavirus_disease_2019
-                            </li>
-                        </ol>
-                    </div>
+            </div>
+        </section>
+        <hr>
+
+        <section id=" reference" class="pb-4">
+            <div class="row">
+                <div class="py-3 col-12">
+                    <h5 class="py-3">References</h5>
+                    <ol class="list">
+                        <li>Coronavirus disease 2019 (COVID-19): Epidemiology, virology, and prevention; Retrieved from https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19-vepidemiology-virology-and-prevention</li>
+                        <li>Coronavirus Disease 2019 (COVID-19); Retrieved from https://emedicine.medscape.com/article/2500114-overview#a1</li>
+                        <li>Coronavirus Disease (COVID-19); Retrieved from https://www.physio-pedia.com/Coronavirus_Disease_(COVID-19)
+                        </li>
+                        <li>COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU); Retrieved from https://coronavirus.jhu.edu/map.html</li>
+                        <li> 10 Reasons to Doubt the Covid-19 Data; Retrieved from https://www.bloomberg.com/opinion/articles/2020-04-13/ten-reasons-to-doubt-the-covid-19-data</li>
+                        <li>COVID-19 to Plunge Global Economy into Worst Recession since World War II; Retrieved from https://www.worldbank.org/en/news/press-release/2020/06/08/covid-19-to-plunge-global-economy-into-worst-recession-since-world-war-ii</li>
+                        <li>SARS-CoV-2 Transmission; Retrieved from https://www.worldometers.info/coronavirus/transmission/
+                        </li>
+                        <li>How Does Coronavirus Spread?; Retrieved from https://www.webmd.com/lung/coronavirus-transmission-overview#1
+                        </li>
+                        <li>Cheng-wei Lu, Xiu-fen Liu, Zhi-fang Jia (2020) 2019-nCoV transmission through the ocular surface must not be ignored. doi: https://doi.org/10.1016/S0140-6736(20)30313-5
+                        </li>
+                        <li>I Hamming, W Timens, MLC Bulthuis, AT Lely, GJ Navis, and H van Goor (2004) Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis. doi: 10.1002/path.1570</li>
+                        <li>Koichi Yuki, Miho Fujiogi, and Sophia Koutsogiannaki (2020) COVID-19 pathophysiology: A review. doi: 10.1016/j.clim.2020.108427
+                        </li>
+                        <li>Tai, W., He, L., Zhang, X. et al. Characterization of the receptor-binding domain (RBD) of 2019 novel coronavirus: implication for development of RBD protein as a viral attachment inhibitor and vaccine. Cell Mol Immunol 17, 613–620 (2020). https://doi.org/10.1038/s41423-020-0400-4</li>
+                        <li>Wikipedia Coronavirus Disease 2019; Retrieved from https://en.wikipedia.org/wiki/Coronavirus_disease_2019
+                        </li>
+                    </ol>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
 
     <footer id="footer"></footer>
