@@ -1,6 +1,8 @@
+/* FONT */
+
 @font-face {
     font-family: 'poppins';
-    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Regular.ttf");
+    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Medium.ttf");
 }
 
 @font-face {
@@ -22,48 +24,39 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'poppins';
+    src: url('https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf');
+    font-weight: bold;
+}
+
+/* UNIVERSAL STYLES */
+
+p {
+    text-align: justify;
+}
+
 body {
     font-family: poppins;
     color: #363636;
     line-height: 35px;
 }
 
-h3 {
-    font-weight: bold;
+/* ICONS */
+
+svg {
+    display: inline;
 }
 
-/* DESCRIPTIONPAGE */
+/* NAVBAR */
 
-.text-container {
-    padding-top: 130px;
+.dropdown:hover>.dropdown-menu {
+    display: block;
 }
 
-.divide-line {
-    background-color: black;
-    height: 4px;
-}
-
-.main-title {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.img-style {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Reference */
-
-.list {
-    font-size: 14px;
-    color: #6b6b6b;
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
 
 /* FOOTER */
@@ -77,8 +70,14 @@ h3 {
     height: auto;
 }
 
-/* ICONS */
+/* UTILITIES */
 
-svg {
-    display: inline;
+.text-bold {
+    font-weight: bold;
 }
+
+.indent {
+    text-indent: 2rem;
+}
+
+

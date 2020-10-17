@@ -1,43 +1,3 @@
-@font-face {
-    font-family: 'poppins';
-    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/a/ae/T--NYMU-Taipei--Poppins-Light.ttf');
-    font-weight: lighter;
-}
-
-@font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/6/6a/T--NYMU-Taipei--Poppins-Italic.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
-
-body {
-    font-family: poppins;
-    color: #363636;
-}
-
-/* NAVBAR */
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
-
 /* HOMEPAGE */
 
 #bg-covid-world {
@@ -171,12 +131,6 @@ body {
     height: auto;
 }
 
-/* ICONS */
-
-svg {
-    display: inline;
-}
-
 /* MOVING ARROW */
 
 .move-object {
@@ -195,13 +149,6 @@ svg {
     50% {
         transform: translateY(20px);
     }
-}
-
-
-/* MISC */
-
-.text-bold {
-    font-weight: bold;
 }
 
 

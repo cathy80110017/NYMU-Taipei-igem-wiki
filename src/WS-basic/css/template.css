@@ -1,0 +1,87 @@
+body {
+    font-family: poppins;
+    color: #363636;
+}
+
+p {
+    line-height: 35px;
+}
+
+/* HEADINGS */
+
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#main-container {
+    padding-top: 130px;
+}
+
+.img-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DESCRIPTIONPAGE ONLY */
+
+#description-solution-img {
+    margin-top: -2rem;
+}
+
+/* DESIGN PAGE ONLY */
+
+#design-capture-img {
+    margin-top: -1.5rem;
+}
+
+/* REFERENCE */
+
+.list {
+    padding-left: 16px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+/* UTILITIES */
+
+
+hr {
+    border-style: solid;
+    border-color: #2C2C2C;
+}
+
+.heading-underline {
+    background-color: black;
+    height: 4px;
+}
+
+.mt--2 {
+    margin-top: -2rem;
+}
+
+.mt--1-5 {
+    margin-top: -1.5rem;
+}
+
