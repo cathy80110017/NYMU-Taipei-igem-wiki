@@ -56,6 +56,15 @@ h5 {
     margin-top: -1.5rem;
 }
 
+/* EXPERIMENTS PAGE ONLY */
+
+.card-heading-style {
+    background-color: rgb(243, 243, 243);
+}
+.card-heading-style:hover {
+    background-color: #b6b6b6;
+}
+
 /* REFERENCE */
 
 .list {

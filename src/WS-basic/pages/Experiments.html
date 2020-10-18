@@ -19,51 +19,206 @@
             Experiments
         </div>
         <hr class="divide-line">
-        <div class="accordion py-5" id="accordionExample">
+        <div class="accordion py-5" id="accordion" >
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header card-heading-style" id="headingOne">
                     <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        <div data-toggle="collapse" data-target="#collapseOne" data-parent="#accordion"
                             aria-expanded="true" aria-controls="collapseOne">
-                            6xHis-tag Protein purification
-                        </button>
+                            <h5 class="m-2"> 6xHis-tag Protein purification</h5>
+                        </div>
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body row">
+                        <div class="col-12 col-md-6">
+                            <strong>A. Growth of Expression Cultures:</strong>
+                            <ol>
+                                <li>Inoculate 10 ml of 2XYT medium containing the appropriate antibiotics with a fresh
+                                    bacterial colony harboring the expression plasmid.</li>
+                                <li>Grow at 37°C overnight.</li>
+                                <li>Dilute the non-induced overnight culture 1:60 (e.g., inoculate 30 ml 2XYT medium
+                                    with 500 µl overnight culture) with fresh 2XYT medium containing the appropriate
+                                    antibiotics.</li>
+                                <li>Grow at 37°C with vigorous shaking until the OD600 reaches 0.6.</li>
+                                <li>Add IPTG to a final concentration of 1 mM and grow the culture at 37°C with vigorous
+                                    shaking for 4 hours.IPTG(Isopropyl β-d-1-thiogalactopyranoside): MW 238.30</li>
+                                <li>Harvest the cells by centrifugation at 6000 rpm for 15 min.</li>
+                            </ol>
+                            <strong>B. Preparation (Denaturing):</strong>
+                            <ol>
+                                <li>Buffer A:
+                                    <ul>
+                                        <li>10ml: 5.73 g GuHCl;</li>
+                                        <li>2 ml 5X Phosphate Buffer Stock Solution 1 L;</li>
+                                        <li>573 g guanidine hydrochloride;</li>
+                                        <li>13.80 g NaH2PO4·H2O;</li>
+                                        <li>1.210 g Tris base6 M GuHCl;</li>
+                                        <li>0.1 M NaH2PO4;</li>
+                                        <li>0.01 M Tris·Cl;</li>
+                                        <li>pH 8.0</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Buffer B - 7M urea:
+                                    <ul>
+                                        <li>10ml: 3.9420 g urea;</li>
+                                        <li>2 ml 5X Phosphate Buffer Stock Solution 1 L;</li>
+                                        <li>394.20 g urea;</li>
+                                        <li>13.80 g NaH2PO4·H2O;</li>
+                                        <li>12.10 g Tris base 7 M urea;</li>
+                                        <li>0.1 M NaH2PO4;</li>
+                                        <li>0.01 M Tris·Cl;</li>
+                                        <li>pH 8.0</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Buffer C:
+                                    <ul>
+                                        <li>10ml: 4.8050 g urea;</li>
+                                        <li>2 ml 5X Phosphate Buffer Stock Solution 1 L;</li>
+                                        <li>480.50 g urea;</li>
+                                        <li>13.80 g NaH2PO4·H2O;</li>
+                                        <li>12.10 ag Tris base 8 M urea;</li>
+                                        <li>0.1 M NaH2PO4;</li>
+                                        <li>0.01 M Tris·Cl;</li>
+                                        <li>pH 6.3</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Buffer D:
+                                    <ul>
+                                        <li>10ml: 4.8050 g urea;</li>
+                                        <li>2 ml 5X Phosphate Buffer Stock Solution 1 L;</li>
+                                        <li>480.50 g urea;</li>
+                                        <li>13.80 g NaH2PO4·H2O;</li>
+                                        <li>12.10 g Tris base 8 M urea;</li>
+                                        <li>0.1 M NaH2PO4;</li>
+                                        <li>0.01 M Tris·HCl;</li>
+                                        <li>pH 5.9</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Buffer E:
+                                    <ul>
+                                        <li>10ml: 4.8050 g urea; </li>
+                                        <li>2 ml 5X Phosphate Buffer Stock Solution 1 L;</li>
+                                        <li>480.50 g urea;</li>
+                                        <li>13.80 g NaH2PO4·H2O;</li>
+                                        <li>12.10 g Tris base 8 M urea;</li>
+                                        <li>0.1 M NaH2PO4;</li>
+                                        <li>0.01 M Tris·Cl;</li>
+                                        <li>pH 4.5</li>
+                                    </ul>
+                                </li>
+                                <li>Cell pellets frozen for at least 30 minutes at –20°C can be lysed by resuspending in
+                                    lysis buffer and adding Benzonase® Nuclease (3 Units/ml culture volume).</li>
+                                <li>Fresh pellets require sonication or homogenization in addition to the addition of 3
+                                    Units/ml culture volume Benzonase® Nuclease and 1 mg/ml culture volume lysozyme</li>
+                            </ol>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <strong>C. Purification (Denaturing):</strong>
+                            <ol>
+                                <li>Thaw cells for 15 min and resuspend in 700 µl Buffer B – 7 M urea and add 3 Units/ml
+                                    culture volume Benzonase® Nuclease (i.e., for cell pellets from 5 ml cultures, add
+                                    15 Units Benzonase® Nuclease). Resuspending pellet in 700 µl buffer will allow
+                                    recovery of a volume of cleared lysate of approx. 600 µl.If the cells or the protein
+                                    do not solubilize in Buffer B, then Buffer A must be used.For lower expression
+                                    levels (1–5 mg/liter), 50 ml of cell culture should be used, to give a 50x
+                                    concentrated cell lysate</li>
+                                <li>Incubate cells with agitation for 15 min at room temperature.</li>
+                                <li>Centrifuge lysate at 10400 rpm for 15–30 min at room temperature to pellet the
+                                    cellular debris. Collect supernatant.Save 20 µl of the cleared lysate for SDS-PAGE
+                                    analysis.</li>
+                                <li>Equilibrate a Ni-NTA spin column with 600 µl Buffer B – 7 M urea. Centrifuge for 2
+                                    min at 2900 rpm. The spin columns should be centrifuged with an open lid</li>
+                                <li>Load up to 600 µl of the cleared lysate supernatant containing the 6xHis-tagged
+                                    protein onto a pre-equilibrated Ni-NTA spin column. Centrifuge 5 min at 1600 rpm,
+                                    and collect the flow-through. not to exceed 1600 rpm when centrifuging. Save the
+                                    flow-through for analysis by SDS-PAGE to check binding.</li>
+                                <li>Wash the Ni-NTA spin column with 600 µl Buffer C. Centrifuge for 2 min at 2900
+                                    rpm.Most proteins will remain soluble in Buffer C. If this is not the case, Buffer C
+                                    and Buffer E should be made with 6 M guanidine hydrochloride instead of 8 M urea.For
+                                    very low expression levels or highly concentrated lysates, 3 wash steps may be
+                                    required to achieve high purity. Save the flow-through (wash fractions) for analysis
+                                    by SDS-PAGE to check the stringency of the wash conditions.</li>
+                                <li>Elute the protein twice with 200 µl Buffer E. Centrifuge for 2 min at 2900 rpm, and
+                                    collect the eluate.Most of the 6xHis-tagged protein (>80%) should elute in the first
+                                    200 µl, especially when proteins smaller than 30 kDa are purified. The remainder
+                                    will elute in the second 200 µl.If higher protein concentrations are desired, do not
+                                    combine the eluates or, alternatively, elute in 100–150 µl aliquots. If 6xHis-tagged
+                                    monomers need to be separated from multimers, an elution step using Buffer D may be
+                                    performed before elution with Buffer E.</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Binding analysis by western blot
-                        </button>
+                        <div data-toggle="collapse" data-target="#collapseTwo" data-parent="#accordion"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            <h5 class="m-2"> Binding analysis by western blot</h5>
+                        </div>
                     </h2>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body row">
+                        <div class="col-12 col-md-6">
+                            <strong>A. Sample preparation</strong>
+                            <ol>
+                                <li>Remove a small volume of lysate to perform a protein quantification assay. Determine
+                                    the protein concentration for each cell lysate.</li>
+                                <li>Determine how much protein to load (60 ng) and add an equal volume 2X Laemmli sample
+                                    buffer.​</li>
+                                <li>To reduce and denature samples, boil each cell lysate in sample buffer at 100°C for
+                                    5 min. Lysates can be aliquoted and stored at -20°C for future use.</li>
+                            </ol>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <strong>B. Loading and running the gel</strong>
+                            <ol>
+                                <li>Load equal amounts of protein into the wells of the SDS-PAGE gel, along with
+                                    molecular weight marker. Load 60 ng of purified protein.</li>
+                                <li>Run the gel for 1–2 h at 100 V.</li>
+                                <li>Transferring the protein from the gel to the membrane</li>
+                                <li>Block the membrane for 1 h at room temperature or overnight at 4°C using blocking
+                                    buffer.</li>
+                                <li>Incubate the membrane with appropriate dilutions of primary antibody in blocking
+                                    buffer. We recommend overnight incubation at 4°C</li>
+                                <li>Wash the membrane in three washes of TBST, 5 min each</li>
+                                <li>Incubate the membrane with the recommended dilution of conjugated secondary antibody
+                                    in blocking buffer at room temperature for 1 h.</li>
+                                <li>Wash the membrane in three washes of TBST, 5 min each.</li>
+                                <li>For signal development, follow the kit manufacturer’s recommendations. Remove excess
+                                    reagent and cover the membrane in transparent plastic wrap.</li>
+                                <li>Acquire image using darkroom development techniques for chemiluminescence, or normal
+                                    image scanning methods for colorimetric detection.
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header" id="headingThree">
+
                     <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            hydrogrl making and protein immoblization
-                        </button>
+                        <div data-toggle="collapse" data-target="#collapseThree" data-parent="#accordion"
+                            aria-expanded="true" aria-controls="collapseThree">
+                            <h5 class="m-2"> <i class="fas fa-angle-down rotate-icon"></i>hydrogrl making and protein
+                                immoblization</h5>
+                        </div>
                     </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body row">
+                        <div class="col-12 col-md-6">
 
+                        </div>
                     </div>
                 </div>
             </div>
