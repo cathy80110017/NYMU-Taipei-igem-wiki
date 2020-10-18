@@ -14,22 +14,23 @@
 <body>
     <div id="navbar"></div>
 
-    <div class="container main-container" data-spy="scroll">
-        <h3>Experiments</h3>     
+    <div class="container main-container pointer-active" data-spy="scroll">
+        <h3>Experiments</h3>
         <hr class="divide-line">
-        <div class="accordion py-5" id="accordion" >
+
+        <div class="accordion py-5" id="accordion">
             <div class="card">
                 <div class="card-header card-heading-style" id="headingOne">
-                    <h2 class="mb-0">
-                        <div data-toggle="collapse" data-target="#collapseOne" data-parent="#accordion"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            <h5 class="m-2"> 6xHis-tag Protein purification</h5>
+                    <h2 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <div>
+                            <h5 class="pointer active"> 6xHis-tag Protein purification</h5>
                         </div>
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body row">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body row card-box-style">
                         <div class="col-12 col-md-6">
                             <strong>A. Growth of Expression Cultures:</strong>
                             <ol>
@@ -155,16 +156,16 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <div data-toggle="collapse" data-target="#collapseTwo" data-parent="#accordion"
-                            aria-expanded="true" aria-controls="collapseTwo">
-                            <h5 class="m-2"> Binding analysis by western blot</h5>
+                <div class="card-header card-heading-style" id="headingTwo">
+                    <h2 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <div>
+                            <h5 class="pointer"> Binding analysis by western blot</h5>
                         </div>
                     </h2>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body row">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body row card-box-style">
                         <div class="col-12 col-md-6">
                             <strong>A. Sample preparation</strong>
                             <ol>
@@ -202,20 +203,38 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingThree">
-
-                    <h2 class="mb-0">
-                        <div data-toggle="collapse" data-target="#collapseThree" data-parent="#accordion"
-                            aria-expanded="true" aria-controls="collapseThree">
-                            <h5 class="m-2"> <i class="fas fa-angle-down rotate-icon"></i>hydrogrl making and protein
-                                immoblization</h5>
+                <div class="card-header card-heading-style" id="headingThree">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                        aria-controls="collapseThree">
+                        <div>
+                            <h5 class="pointer"> hydrogrl making and protein immoblization</h5>
                         </div>
                     </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body row">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body row card-box-style">
                         <div class="col-12 col-md-6">
+                            <strong>A. Hydrogel making</strong>
+                            <ol>
+                                <li>Add 13ml HEMA((2-hydroxyethyl methacrylate) and 5ml H2O to mixed solution and keep
+                                    stir for 5min</li>
+                                <li>Add 0.02g TEGDMA to mixed solution then stir for 20min</li>
+                                <li>Add 5ml H2O and 0.06g AIBN to beaker, then stir for 5min</li>
+                                <li>Go microwave for 30 sec</li>
+                                <li>Distribute to five 5cm plates</li>
+                                <li>Put one in the dry oven (temperature: 90 degrees Celcius) for 2hours</li>
+                            </ol>
 
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <strong>B. Protein immoblization</strong>
+                            <ol>
+                                <li>Prepare 0.05% KMnO4 solution</li>
+                                <li>Drip the solution on the surface of pHEMA for a while to oxidize -OH group (the changing of solution from purple to brown means the interaction completed)</li>
+                                <li>use Fourier-transform infrared spectroscopy (FTIR)to check whether the functional group had change(the peak of C、O double bond shoud be higher under same background after oxidation).</li>
+                                <li>Soak hydrogel into Cu2+ contained aqueous solution(0.03g CuSO4 + 10g NaOH solved in 100ml water) mechanically stirred at room temperature for 2 hours make Cu2+ chelated with -COOH to make a Ni-NTA alike surface</li>
+                                <li>Soaking hydrogel into aqueous solution which contains proteins(Xaa-Pro aminopeptide with N-terminal 6X His tag) and mechanically stirred at room temperature for 2 hours to make 6X His-tag chelated with Cu2+ which results Xaa-Pro aminopeptides properly covered on the surface of polyHEMA.</li>
+                            </ol>                            
                         </div>
                     </div>
                 </div>
