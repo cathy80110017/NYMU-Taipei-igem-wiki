@@ -182,6 +182,15 @@ h5 {
 .pointer {
     height: 100%;
     cursor: pointer;
+    line-height: 5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px){
+    .pointer{
+        font-size:1.22rem;   
+    }
 }
 
 .pointer::before {
@@ -200,6 +209,7 @@ h5 {
 }
 
 .pointer.active::before {
+    transition: transform .2s ease-out;
     transform: rotate(45deg);
 }
 

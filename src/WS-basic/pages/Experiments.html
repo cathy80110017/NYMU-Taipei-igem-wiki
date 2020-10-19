@@ -22,9 +22,9 @@
             <div class="card">
                 <div class="card-header card-heading-style" id="headingOne">
                     <h2 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                        aria-controls="collapseOne">
+                        aria-controls="collapseOne" >
                         <div>
-                            <h5 class="pointer active"> 6xHis-tag Protein purification</h5>
+                            <h5 class="pointer"> 6xHis-tag Protein purification</h5>
                         </div>
                     </h2>
                 </div>
@@ -245,11 +245,27 @@
     <footer id="footer"></footer>
 
     <script>
+
         $(function () {
             $("#navbar").load("../components/navbar.html");
             $("#footer").load("../components/footer.html");
         })
             // $('body').scrollspy({ target: '.navbar-example' })
+
+        var isCollapsed = [true, true, true];
+        var bs = document.querySelectorAll(".pointer");
+        bs.forEach(function(b, i){
+            b.addEventListener("click",function(e){
+                console.log(123);
+                if(isCollapsed[i]){
+                    b.classList.add("active");
+                }else{
+                    b.classList.remove("active");
+                }
+                isCollapsed[i]=!isCollapsed[i];
+            });
+        })
+
     </script>
 </body>
 
