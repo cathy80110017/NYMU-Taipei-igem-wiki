@@ -62,7 +62,7 @@ svg {
 /* FOOTER */
 
 .footer {
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .footer-info {
@@ -70,8 +70,10 @@ svg {
 }
 
 .footer-sponsors img {
-    width: 100%;
+    width: 30%;
     height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* UTILITIES */
