@@ -1,89 +1,88 @@
 /* FONT */
 
 @font-face {
-    font-family: 'poppins';
-    src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Medium.ttf");
+  font-family: "poppins";
+  src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Medium.ttf");
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf');
-    font-weight: bold;
+  font-family: "poppins";
+  src: url("https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/a/ae/T--NYMU-Taipei--Poppins-Light.ttf');
-    font-weight: lighter;
+  font-family: "poppins";
+  src: url("https://2020.igem.org/wiki/images/a/ae/T--NYMU-Taipei--Poppins-Light.ttf");
+  font-weight: lighter;
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/6/6a/T--NYMU-Taipei--Poppins-Italic.ttf');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "poppins";
+  src: url("https://2020.igem.org/wiki/images/6/6a/T--NYMU-Taipei--Poppins-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url('https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf');
-    font-weight: bold;
+  font-family: "poppins";
+  src: url("https://2020.igem.org/wiki/images/d/d7/T--NYMU-Taipei--Poppins-Bold.ttf");
+  font-weight: bold;
 }
 
 /* UNIVERSAL STYLES */
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 body {
-    font-family: poppins;
-    color: #363636;
-    line-height: 35px;
+  font-family: poppins;
+  color: #363636;
+  line-height: 35px;
 }
 
 /* ICONS */
 
 svg {
-    display: inline;
+  display: inline;
 }
 
 /* NAVBAR */
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
-.dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 
 /* FOOTER */
 
 .footer {
-    font-size: 1rem;
+  font-weight: bold;
+  font-size: 0.5rem;
 }
 
 .footer-info {
-    background-color: #52b098;
+  background-color: #52b098;
 }
 
 .footer-sponsors img {
-    width: 30%;
-    height: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  width: 30%;
+  height: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* UTILITIES */
 
 .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .indent {
-    text-indent: 2rem;
+  text-indent: 2rem;
 }
-
-

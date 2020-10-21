@@ -13,83 +13,93 @@
     <link rel=stylesheet type="text/css" href="../css/template.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
     <div id="navbar"></div>
 
     <div class="container-xl main-container">
-
         <div class="row">
+            <!-- START SIDE NAV -->
             <div class="col-md-3">
-
-                <!-- Start SideNav Section -->
-                <nav id="side-navbar" class="side-navbar d-none d-lg-block navbar">
-                    <ul class="side-nav-menu">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
                         <li class="nav-item">
-                            <a data-scroll="Background" href="#Background" class="dot nav-link active">
-                            <span>Background</span>
+                            <a class="dot nav-link active" href="#Background">
+                                <span>Background</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll="Solution" href="#Solution" class="dot nav-link">
-                            <span>Solution</span>
+                            <a class="dot nav-link" href="#Solution">
+                                <span>Solution</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll="Inspiration" href="#Inspiration" class="dot nav-link">
-                            <span>Inspiration</span>
+                            <a class="dot nav-link" href="#Inspiration">
+                                <span>Inspiration</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll="Reference" href="#Reference" class="dot nav-link">
-                            <span>Reference</span>
+                            <a class="dot nav-link" href="#Reference">
+                                <span>Reference</span>
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <!-- End SideNav Section -->
             </div>
+            <!-- END SIDE NAV -->
 
-            <div class="col-md-9" data-spy="scroll" data-target="#side-navbar" data-offset="0" >
-
-                <div class="py-5">
-                    <h3>Description</h3>
-                    <hr class="heading-underline">
-                </div>
-
+            <div class="col-md-9">
                 <section id="Background">
+
+                    <div class="py-5">
+                        <h3>Description</h3>
+                        <hr class="heading-underline">
+                    </div>
+
                     <h4 class="pt-2 pb-3">
                         Background - COVID-19
                     </h4>
 
-                    <div id="prevalence" class="pb-4">
+                    <div id="Prevalence" class="pb-4">
                         <div class="row">
                             <div class="py-3 col-12 col-md-8">
                                 <h5 class="py-2">Prevalence</h5>
                                 <p class="indent">
-                                    Coronovirus diesease 2019, also known as COVID-19, is an infectious disease caused by the virus,
-                                    SARS-CoV-2. The disease was first identified in 2019 Wuhan, Hubei, China, and has since spread
-                                    throughout the world via the tightly connected global economy. By the end of 2019, all
+                                    Coronovirus diesease 2019, also known as COVID-19, is an infectious disease caused
+                                    by the virus,
+                                    SARS-CoV-2. The disease was first identified in 2019 Wuhan, Hubei, China, and has
+                                    since spread
+                                    throughout the world via the tightly connected global economy. By the end of 2019,
+                                    all
                                     continents
                                     have
-                                    confirmed cases of the disease, except for Antarctica. As the of number cases rise exponentially
+                                    confirmed cases of the disease, except for Antarctica. As the of number cases rise
+                                    exponentially
                                     in
                                     many
-                                    countries due to the strong infectivity of the virus, WHO decalred COVID-19 as a global pandemic
+                                    countries due to the strong infectivity of the virus, WHO decalred COVID-19 as a
+                                    global pandemic
                                     on
-                                    March 11th, 2020. As of September 20th, 2020, the number of total global cases has exceeded 30
+                                    March 11th, 2020. As of September 20th, 2020, the number of total global cases has
+                                    exceeded 30
                                     million,
-                                    and the number of global deaths passing 900,000. The top three countries with the highest number
+                                    and the number of global deaths passing 900,000. The top three countries with the
+                                    highest number
                                     of
-                                    cases include the United States, India, and Brazil. Moreover, due to the limitations of testing
-                                    capabilities and testing amounts, the true toll of the pandemic is predicted to be ten times
+                                    cases include the United States, India, and Brazil. Moreover, due to the limitations
+                                    of testing
+                                    capabilities and testing amounts, the true toll of the pandemic is predicted to be
+                                    ten times
                                     larger
                                     than
-                                    what is reported. The prevalence of this particular virus has been unexpected, striking a deep
+                                    what is reported. The prevalence of this particular virus has been unexpected,
+                                    striking a deep
                                     blow
                                     to
-                                    the global society on both economic and social terms. The pandemic has caused the largest
+                                    the global society on both economic and social terms. The pandemic has caused the
+                                    largest
                                     economic
-                                    recession in history. Therefore, it is everyone’s responsibility to try their best to mitigate
+                                    recession in history. Therefore, it is everyone’s responsibility to try their best
+                                    to mitigate
                                     the
                                     losses of the global community.
                                 </p>
@@ -99,23 +109,31 @@
                             </div>
                         </div>
                     </div>
-                    <div id="transmission" class="pb-4">
+                    <div id="Transmission" class="pb-4">
                         <div class="row">
                             <div class="py-3 col-12 col-md-6">
                                 <h5 class="py-2">Transmission</h5>
                                 <p class="indent">
-                                    The prevalence of COVID-19 as we mentioned above is mainly due in part to its transmission
+                                    The prevalence of COVID-19 as we mentioned above is mainly due in part to its
+                                    transmission
                                     mechanics.
-                                    However, COVID-19 is a novel disease and many of its transmission mechanics still derserves more
-                                    understanding. The major route of transmission of the virus is through person-to-person close
-                                    interactions. The main source of infection is through airborne measures, such as respiratory
+                                    However, COVID-19 is a novel disease and many of its transmission mechanics still
+                                    derserves more
+                                    understanding. The major route of transmission of the virus is through
+                                    person-to-person close
+                                    interactions. The main source of infection is through airborne measures, such as
+                                    respiratory
                                     droplets
-                                    and aerosols, the former is more infectious but drops to the ground more easily, while the
+                                    and aerosols, the former is more infectious but drops to the ground more easily,
+                                    while the
                                     latter is
-                                    less infectious but stays longer in indoor settings. Infections through fecal-oral routes or
-                                    contaminated surfaces are also possible but less common. Virus released in the respiratory
+                                    less infectious but stays longer in indoor settings. Infections through fecal-oral
+                                    routes or
+                                    contaminated surfaces are also possible but less common. Virus released in the
+                                    respiratory
                                     secretions
-                                    can easily infect another person if it makes direct or indirect contact with human mucous
+                                    can easily infect another person if it makes direct or indirect contact with human
+                                    mucous
                                     membranes,
                                     which exists in the eyes, nose, mouth of a person.
                                 </p>
@@ -125,28 +143,37 @@
                             </div>
                         </div>
                     </div>
-                    <div id="pathogenesis" class="pb-4">
+                    <div id="Pathogenesis" class="pb-4">
                         <div class="row">
                             <div class="py-3 col-12">
                                 <h5 class="py-2">Pathogenesis</h5>
                                 <p class="indent">
-                                    COVID-19 mainly affects the respiratory system, including the upper respiratory tract (sinuses,
+                                    COVID-19 mainly affects the respiratory system, including the upper respiratory
+                                    tract (sinuses,
                                     nose,
-                                    and throat) and the lower respiratory tract (windpipe and lungs). SARS-CoV-2 accesses human
+                                    and throat) and the lower respiratory tract (windpipe and lungs). SARS-CoV-2
+                                    accesses human
                                     cells
                                     via
-                                    the enzyme angiotensin-converting enzyme 2 (hACE2), which is most prevalent in type II alveolar
+                                    the enzyme angiotensin-converting enzyme 2 (hACE2), which is most prevalent in type
+                                    II alveolar
                                     cells of
-                                    the lungs. Coronoviruses consist of four structural proteins; Spike (S), membrane (M), envelop
+                                    the lungs. Coronoviruses consist of four structural proteins; Spike (S), membrane
+                                    (M), envelop
                                     (E),
-                                    nucleocapsid (N), of which Spike is the main focus of our project studies. Spike is composed of
+                                    nucleocapsid (N), of which Spike is the main focus of our project studies. Spike is
+                                    composed of
                                     a
-                                    transmembrane trimetric glycoprotein protruding from the viral surface, which determines the
+                                    transmembrane trimetric glycoprotein protruding from the viral surface, which
+                                    determines the
                                     diversity
-                                    of coronaviruses and host tropism. Spike consists of two functional subunits. S1 subunit is
+                                    of coronaviruses and host tropism. Spike consists of two functional subunits. S1
+                                    subunit is
                                     responsible
-                                    for binding to the host receptor, while S2 is involved in the fusion of the viral and cellular
-                                    membranes. As for the SARS-CoV-2, its spike protein exhibits significantly stronger binding
+                                    for binding to the host receptor, while S2 is involved in the fusion of the viral
+                                    and cellular
+                                    membranes. As for the SARS-CoV-2, its spike protein exhibits significantly stronger
+                                    binding
                                     affinity
                                     to
                                     the ACE2 receptor than other coronaviruses, shedding light on the high infection and
@@ -171,17 +198,22 @@
                         <div class="row">
                             <div class="col-12">
                                 <p class="indent">
-                                    Undoubtedly, researchers the world over are striving to find measures to mitigate the dire
+                                    Undoubtedly, researchers the world over are striving to find measures to mitigate
+                                    the dire
                                     consequences
-                                    of COVID-19. Most of them focus on either developing antibodies that can deactivate the
+                                    of COVID-19. Most of them focus on either developing antibodies that can deactivate
+                                    the
                                     SARS-CoV-2
                                     virus
-                                    or vaccines that can trigger the immunoresponse of the human body. iGem NYMU Taipei 2020 tries
+                                    or vaccines that can trigger the immunoresponse of the human body. iGem NYMU Taipei
+                                    2020 tries
                                     to
                                     tackle
-                                    the problem in a much more elementary approach. By utilizing the nature of strong binding
+                                    the problem in a much more elementary approach. By utilizing the nature of strong
+                                    binding
                                     interactions
-                                    between hACE2 and the spike of SARS-CoV-2, we believe that we would be able to reap the benefits
+                                    between hACE2 and the spike of SARS-CoV-2, we believe that we would be able to reap
+                                    the benefits
                                     of
                                     viral evolution and come up with a more affordable solution.<br>
                                 </p>
@@ -190,28 +222,37 @@
                         <div class="row">
                             <div class="py-3 col-12 col-md-9">
                                 <p class="indent">
-                                    <strong>Off the Crown</strong> wants to capture and even destroy virus particles that may come
+                                    <strong>Off the Crown</strong> wants to capture and even destroy virus particles
+                                    that may come
                                     in
                                     close
-                                    contact with individuals. Our goal is to implement our design on surgical masks, contact lenses,
+                                    contact with individuals. Our goal is to implement our design on surgical masks,
+                                    contact lenses,
                                     and
-                                    even filtration devices so as to reduce the amount of viruses that would come in contact with
-                                    human
-                                    bodies and, thus, reduce the possibility of infection. In order to achieve our goals, iGem NYMU
+                                    even filtration devices so as to reduce the amount of viruses that would come in
+                                    contact with
+                                    human bodies and, thus, reduce the possibility of infection. In order to achieve our
+                                    goals, iGem NYMU
                                     2020
-                                    engineered a protein construct that includes the hACE2 receptor binding domain, a linker, and a
+                                    engineered a protein construct that includes the hACE2 receptor binding domain, a
+                                    linker, and a
                                     protease
-                                    that is specific at cleaving spike proteins. The protein construct functions as a capture device
+                                    that is specific at cleaving spike proteins. The protein construct functions as a
+                                    capture device
                                     and
                                     can
-                                    be implemented on many occasions as a mean to capture, destroy, and even quantify the amount of
+                                    be implemented on many occasions as a mean to capture, destroy, and even quantify
+                                    the amount of
                                     virus
-                                    particles on a particular surface. We also consulted for some advice on material science and
+                                    particles on a particular surface. We also consulted for some advice on material
+                                    science and
                                     developed a
-                                    special gel that has our protein construct attached to its surface, which could readily function
+                                    special gel that has our protein construct attached to its surface, which could
+                                    readily function
                                     as
                                     a
-                                    capture device. Our main goal is to make a modular device that can be built upon or used for
+                                    capture device. Our main goal is to make a modular device that can be built upon or
+                                    used for
                                     many
                                     other
                                     purposes according to different environmental conditions and implmentation goals.
@@ -235,26 +276,37 @@
                         <div class="row">
                             <div class="py-3 col-12 col-md-8">
                                 <p class="indent">
-                                    Inspired by how Taiwan significantly reduced the number of COVID-19 infections by strictly
+                                    Inspired by how Taiwan significantly reduced the number of COVID-19 infections by
+                                    strictly
                                     imposing
-                                    social distancing rules and requiring people to wear surgical masks. We figured that other than
-                                    developing cures such as antibodies or other medications for people that are infected,
+                                    social distancing rules and requiring people to wear surgical masks. We figured that
+                                    other than
+                                    developing cures such as antibodies or other medications for people that are
+                                    infected,
                                     preventive
-                                    measures such as vaccines inside human bodies and capture devices outside human bodies are
+                                    measures such as vaccines inside human bodies and capture devices outside human
+                                    bodies are
                                     equally
-                                    important in the battle against COVID-19. Just like the saying goes, “an ounce of prevention is
+                                    important in the battle against COVID-19. Just like the saying goes, “an ounce of
+                                    prevention is
                                     worth a
-                                    pound of cure”. If we can successfully cut down on the exposure of humans to the virus, the
+                                    pound of cure”. If we can successfully cut down on the exposure of humans to the
+                                    virus, the
                                     infection
-                                    rate could be significantly reduced and many social distancing regulations and city lockdowns
+                                    rate could be significantly reduced and many social distancing regulations and city
+                                    lockdowns
                                     can be
-                                    relaxed so as to revive the already dwindling economy. Moreover, viruses have to infect host
+                                    relaxed so as to revive the already dwindling economy. Moreover, viruses have to
+                                    infect host
                                     organisms
-                                    in order to continue their reproduction. If we can reduce the number of infections to a low
+                                    in order to continue their reproduction. If we can reduce the number of infections
+                                    to a low
                                     enough
-                                    level, it is very likely that the virus will slow down its mutating process and even disappear
+                                    level, it is very likely that the virus will slow down its mutating process and even
+                                    disappear
                                     itself as
-                                    it fails to find the next host. Last but not least, we hope to impact the world with our novel
+                                    it fails to find the next host. Last but not least, we hope to impact the world with
+                                    our novel
                                     idea
                                     and
                                     commit our efforts to the global fight against COVID-19.
@@ -275,24 +327,46 @@
                         <div class="py-3 col-12">
                             <h5 class="py-3">References</h5>
                             <ol class="list">
-                                <li>Coronavirus disease 2019 (COVID-19): Epidemiology, virology, and prevention; Retrieved from https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19-vepidemiology-virology-and-prevention</li>
-                                <li>Coronavirus Disease 2019 (COVID-19); Retrieved from https://emedicine.medscape.com/article/2500114-overview#a1</li>
-                                <li>Coronavirus Disease (COVID-19); Retrieved from https://www.physio-pedia.com/Coronavirus_Disease_(COVID-19)
+                                <li>Coronavirus disease 2019 (COVID-19): Epidemiology, virology, and prevention;
+                                    Retrieved from
+                                    https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19-vepidemiology-virology-and-prevention
                                 </li>
-                                <li>COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU); Retrieved from https://coronavirus.jhu.edu/map.html</li>
-                                <li> 10 Reasons to Doubt the Covid-19 Data; Retrieved from https://www.bloomberg.com/opinion/articles/2020-04-13/ten-reasons-to-doubt-the-covid-19-data</li>
-                                <li>COVID-19 to Plunge Global Economy into Worst Recession since World War II; Retrieved from https://www.worldbank.org/en/news/press-release/2020/06/08/covid-19-to-plunge-global-economy-into-worst-recession-since-world-war-ii</li>
-                                <li>SARS-CoV-2 Transmission; Retrieved from https://www.worldometers.info/coronavirus/transmission/
+                                <li>Coronavirus Disease 2019 (COVID-19); Retrieved from
+                                    https://emedicine.medscape.com/article/2500114-overview#a1</li>
+                                <li>Coronavirus Disease (COVID-19); Retrieved from
+                                    https://www.physio-pedia.com/Coronavirus_Disease_(COVID-19)
                                 </li>
-                                <li>How Does Coronavirus Spread?; Retrieved from https://www.webmd.com/lung/coronavirus-transmission-overview#1
+                                <li>COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns
+                                    Hopkins University (JHU); Retrieved from https://coronavirus.jhu.edu/map.html</li>
+                                <li> 10 Reasons to Doubt the Covid-19 Data; Retrieved from
+                                    https://www.bloomberg.com/opinion/articles/2020-04-13/ten-reasons-to-doubt-the-covid-19-data
                                 </li>
-                                <li>Cheng-wei Lu, Xiu-fen Liu, Zhi-fang Jia (2020) 2019-nCoV transmission through the ocular surface must not be ignored. doi: https://doi.org/10.1016/S0140-6736(20)30313-5
+                                <li>COVID-19 to Plunge Global Economy into Worst Recession since World War II; Retrieved
+                                    from
+                                    https://www.worldbank.org/en/news/press-release/2020/06/08/covid-19-to-plunge-global-economy-into-worst-recession-since-world-war-ii
                                 </li>
-                                <li>I Hamming, W Timens, MLC Bulthuis, AT Lely, GJ Navis, and H van Goor (2004) Tissue distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first step in understanding SARS pathogenesis. doi: 10.1002/path.1570</li>
-                                <li>Koichi Yuki, Miho Fujiogi, and Sophia Koutsogiannaki (2020) COVID-19 pathophysiology: A review. doi: 10.1016/j.clim.2020.108427
+                                <li>SARS-CoV-2 Transmission; Retrieved from
+                                    https://www.worldometers.info/coronavirus/transmission/
                                 </li>
-                                <li>Tai, W., He, L., Zhang, X. et al. Characterization of the receptor-binding domain (RBD) of 2019 novel coronavirus: implication for development of RBD protein as a viral attachment inhibitor and vaccine. Cell Mol Immunol 17, 613–620 (2020). https://doi.org/10.1038/s41423-020-0400-4</li>
-                                <li>Wikipedia Coronavirus Disease 2019; Retrieved from https://en.wikipedia.org/wiki/Coronavirus_disease_2019
+                                <li>How Does Coronavirus Spread?; Retrieved from
+                                    https://www.webmd.com/lung/coronavirus-transmission-overview#1
+                                </li>
+                                <li>Cheng-wei Lu, Xiu-fen Liu, Zhi-fang Jia (2020) 2019-nCoV transmission through the
+                                    ocular surface must not be ignored. doi:
+                                    https://doi.org/10.1016/S0140-6736(20)30313-5
+                                </li>
+                                <li>I Hamming, W Timens, MLC Bulthuis, AT Lely, GJ Navis, and H van Goor (2004) Tissue
+                                    distribution of ACE2 protein, the functional receptor for SARS coronavirus. A first
+                                    step in understanding SARS pathogenesis. doi: 10.1002/path.1570</li>
+                                <li>Koichi Yuki, Miho Fujiogi, and Sophia Koutsogiannaki (2020) COVID-19
+                                    pathophysiology: A review. doi: 10.1016/j.clim.2020.108427
+                                </li>
+                                <li>Tai, W., He, L., Zhang, X. et al. Characterization of the receptor-binding domain
+                                    (RBD) of 2019 novel coronavirus: implication for development of RBD protein as a
+                                    viral attachment inhibitor and vaccine. Cell Mol Immunol 17, 613–620 (2020).
+                                    https://doi.org/10.1038/s41423-020-0400-4</li>
+                                <li>Wikipedia Coronavirus Disease 2019; Retrieved from
+                                    https://en.wikipedia.org/wiki/Coronavirus_disease_2019
                                 </li>
                             </ol>
                         </div>
