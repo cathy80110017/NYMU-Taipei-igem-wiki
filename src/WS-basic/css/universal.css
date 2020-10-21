@@ -59,6 +59,16 @@ svg {
   pointer-events: none;
 }
 
+.navbar-brand {
+  background-image: url("../../assets/img/mini-logo-crown.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 200px;
+  min-height: 63px;
+  margin: 0;
+}
+
 /* FOOTER */
 
 .footer {
