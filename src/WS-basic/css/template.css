@@ -215,6 +215,16 @@ h5 {
   background-color: #fffcf5bd;
 }
 
+/* PARTS PAGE ONLY */
+.table-header {
+  background-color:  #52b098;
+  color: aliceblue;
+}
+
+.table-a-tag {
+  color: rgb(32, 32, 38);
+}
+
 /* REFERENCE */
 
 .list {
