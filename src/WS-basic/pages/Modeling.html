@@ -1,32 +1,379 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Overview">
+                                <span>Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Structural">
+                                <span>Structural Modeling</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Method">
+                                <span>Method</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Docking">
+                                <span>Docking</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Monitoring">
+                                <span>Monitoring Spike Protein</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Reference">
+                                <span>References</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDE NAV -->
+
+            <div class="col-md-9">
+                <section id="Overview">
+                    <div class="py-5">
+                        <h3>Modeling</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <h4 class="pt-2 pb-3">
+                        Overview
+                    </h4>
+
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    Docking protein-protein interation and try to find the binding site. Due to the
+                                    limitation of wet lab, we couldn’t make ACE2 directly from e.coli , and the whole
+                                    spike protein is hard to construct. Therefore, we use modeling to prove our
+                                    hypothesis, which are ACE2 would catch spike protein and protease(pepP) can destroy
+                                    spike protein, correct.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Structural">
+                    <h4 class="py-3">
+                        Structural Modeling
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                <p class="indent">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Method">
+                    <h4 class="py-3">
+                        Method
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    We use SeeSar for docking for all ligands able during editing and clashes can also
+                                    be visualized, to better guide the editing process. During docking, it is often
+                                    times necessary to be a little more forgiving about clashes, as poses are generated
+                                    on a coarse-grain grid of torsion angles only. For this reason, added clash
+                                    tolerance as an adjustable parameter in Docking mode, besides affinity, can be also
+                                    showed on the table.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="py-2">seesar 10 protocol</h5>
+                                <p class="indent">
+                                <ol>
+                                    <li>load protein and define pockets</li>
+                                    <li>select pocket and load ligand</li>
+                                    <li>docking and calculate the affinity</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Docking">
+                    <h4 class="py-3">
+                        Docking
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <h5 class="py-2">spike and pepP affinity</h5>
+                                <p class="indent">
+                                    There are lots of pockets on the spike proteins. After filtering the sequence, we
+                                    select the pocket with the sequence Pro-Phe(in the reference, it said pepP would cut
+                                    the sequence Pro-Phe into two pieces) in order, and then load pepP as ligand. As for
+                                    the docking analysis, we found there are several poses which shows high affininty.
+                                    From the outcome, we could conclude our protease(pepP) is highly possible to binding
+                                    on the spike protein and destroy it as expected.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 img-style">
+                                <img src="/src/assets/img/modeling_spike_and_pepP.jpg" class="img-fluid mt--1-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <h5 class="py-2">ACE2 and pepP affinity</h5>
+                                <p class="indent">
+                                    Though there are 10 pockets on the ACE2 RBD, there is only one pocket(figure 1)
+                                    contains Pro-Phe ordered sequnce. Fortuneately, that pocket is the only pocket in
+                                    the core instead of on the outer side. We then use the pocket to dock the spike
+                                    affinity(figure 2), which shows there is still the chance for ACE2 RBD to bind with
+                                    spike. To prevent this risk, we make a point mutation to make the Pro become???..,
+                                    which would make pepP no finction in the original site.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 img-style flex-column">
+                                <img src="/src/assets/img/modeling_ACE2_and_pepP_fig1.png" class="img-fluid mt--1-5">
+                                <img src="/src/assets/img/modeling_ACE2_and_pepP_fig2.png" class="img-fluid mt--1-5">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Monitoring">
+                    <h4 class="py-3">
+                        Monitoring Spike Protein
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Monitor SARS-CoV-2 Spike</h5>
+                                <p class="indent">
+                                    In our project, knowing how SARS-CoV-2 may evolve naturally is an important safety
+                                    step in finding the right protease to cut spike protein. Through monitoring real
+                                    SARS-CoV-2 spike sequences we will get to know multiple things. First, we will get
+                                    to know how often the spike protein mutates and what mutations are most prevalent.
+                                    Second, after knowing which mutations are more likely to occur, we can make sure
+                                    that the sites we found for protease cutting are not mutation hot spots so we can be
+                                    sure that protease would likely be able to cut at the site without much incidence.
+                                    Lastly, we can also visualize the mutation sites through protein structural modeling
+                                    to see where exactly on the spike protein structure do the mutations potentially
+                                    occur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Collect Genomes and Preprocessing Data</h5>
+                                <p class="indent">
+                                    How the monitoring is done exactly, is that at first we need to collect the
+                                    sequences of multiple SARS-CoV-2 genomes. We get the sequences from the GISAID
+                                    database. GISAID stands for global initiative of sharing all influenza data, and as
+                                    of now they also share covid-19 data. From their website, the sequences downloaded
+                                    are in FASTA file. We took all the sequences with the location “Taiwan” in it. In
+                                    total there were 114 sequences and the dates ranged from January to late April.
+                                </p>
+                                <p class="indent">
+                                    Later on we put the FASTA files into Geneious for a better visualization of the
+                                    sequences. Of the 114 sequences retrieved, one was deleted before further
+                                    investigation due to it being radically short compared to the rest of the sequences.
+                                    Later on, we used the reference genome on NCBI to see where exactly the spike
+                                    sequence should be. After knowing how the sequence should start and how it should
+                                    end, we trimmed all 113 sequences to leave only the spike sequence. The end product
+                                    here is that we now have 113 spike sequences ready for further analysis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Two Analysis Paths</h5>
+                                <p class="indent">
+                                    For analyzing the spike sequences, we chose to analyze it in two ways. One is a
+                                    time-based analysis where we first sort the sequences in a timely order, then we
+                                    observe the spike sequences and see what mutations become the new trend. The second
+                                    way of analysis is a location-based analysis where we first sort the spike sequences
+                                    by location. Of all the Taiwan SARS-CoV-2 sequences, the locations were further
+                                    sorted into Taipei, New Taipei, Taoyuan, Keelung, Tainan, and Kaohsiung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Visualization</h5>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_visualization_fig1.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 1: from the graph we can see that the occurrence of D614G has greatly
+                                        increased since March which is in line with global trends. Most of Taiwan’s
+                                        Covid-19
+                                        cases are from people coming back from foreign countries so the trend of
+                                        following
+                                        global patterns is expected.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_visualization_fig2.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 2: Contrary to global trends, the mutation of site T791I does not seem as
+                                        prevalent compared to the mutation of D614G. For Taiwan, it seems that T791I
+                                        mutation did show up briefly but then quickly disappeared and has not shown up
+                                        again ever since.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_visualization_fig3.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 3: From the graph we can see that before March all the amino acids on
+                                        site 614 was D but after March the northern region of Taiwan shows the most
+                                        impact from D614G. Why this would happen we speculate that a lot of the
+                                        population lives in the northern region and hence the place with more cases
+                                        would naturally show more similarity with global trends.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_visualization_fig4.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 4: From the graph we can see something different compared to global
+                                        trends. The T791I mutation was known for being a co-mutation with D614G but in
+                                        the case of Taiwan, T791I showed up early in the outbreak but later died down.
+                                        Interestingly, the only location that did show this mutation was Taoyuan county.
+                                        Taoyuan county is the place of Taiwan’s biggest international airport so we
+                                        speculate that the people with this mutation got it from foreign countries and
+                                        then brought it back to Taiwan, but for some reason, maybe due to the mutation
+                                        not bringing any evolutionary advantage to the virus added with the fact that
+                                        not many people had this mutation to begin with, the mutation then quickly died
+                                        down and disappeared.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Structural Visualization</h5>
+                                <p class="indent">
+                                    After seeing what mutations occur among the SARS-CoV-2 spike sequences, we wanted to
+                                    see where these common mutations show up exactly on the structure of the spike
+                                    protein. For this we chose to use Swiss-model for protein structural modeling. The
+                                    process of how Swiss-model predicts a protein structures is through protein homology
+                                    modeling, in general it uses an experimentally verified structure as a template and
+                                    through the template it then predicts the new target protein structure.
+                                </p>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_structural_visualization_fig1.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 5: From the graph we can see that the site of 614 is around the border of
+                                        S1 and S2 subunit of spike protein. There has been previous reports that this
+                                        mutation is related to the increase of infectivity of the virus. We speculate
+                                        due to it’s important structural placing and of the process of how a virus
+                                        infects a human (the virus has to undergo protease trimming before actually
+                                        entering the cell), it is reasonable for a mutation at this location to cause
+                                        change in the chance of infectivity.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="img-style">
+                                        <img src="/src/assets/img/modeling_structural_visualization_fig2.png">
+                                    </div>
+                                    <p class="indent">
+                                        Figure 6: From the graph we can see that site 791 is nearer to the bottom region
+                                        of the spike protein. Combined with our observation that this mutation later on
+                                        did not show up in any more Taiwan cases and that the mutation site is nearer to
+                                        the bottom region, we speculate that this mutation does not have much impact on
+                                        infectivity of the virus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Reference" class="pb-4">
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <h5 class="py-3">References</h5>
+                            <ol class="list">
+                                <li>Elbe, S., and Buckland-Merrett, G. (2017) Data, disease and diplomacy: GISAID’s
+                                    innovative contribution to global health. Global Challenges, 1:33-46.
+                                    doi:10.1002/gch2.1018
+                                </li>
+                                <li>“Geneious 2020.1.2 (http://www.geneious.com, Kearse et al., 2012)”</li>
+                                <li>Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R.,
+                                    Heer, F.T., de Beer, T.A.P., Rempfer, C., Bordoli, L., Lepore, R., Schwede, T.
+                                    SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic Acids
+                                    Res. 46(W1), W296-W303 (2018).
+                                </li>
+                                <li>Bette Korber,Will M.Fischer, Sandrasegaram Gnanakaran, Hyejin Yoon, James Theiler,
+                                    Werner Abfalterer, Nick Hengartner, Elena E.Giorgi, Tanmoy Bhattacharya, Brian
+                                    Foley, et al. Tracking Changes in SARS-CoV-2 Spike: Evidence that D614G Increases
+                                    Infectivity of the COVID-19 Virus. Cell. 2020 Aug 20. Volume 182, Issue 4, Pages
+                                    812-827.e19
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+    </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
-            // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
+    </script>
+</body>
+
 </html>
