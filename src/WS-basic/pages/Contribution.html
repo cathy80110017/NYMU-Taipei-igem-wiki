@@ -1,32 +1,127 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Protease">
+                                <span>Protease database</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Detection">
+                                <span>Detection box</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Danger">
+                                <span>Some ways to achieve this include</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDE NAV -->
+
+            <div class="col-md-9">
+                <section id="Protease">
+                    <div class="py-5">
+                        <h3>Contribution</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <h4 class="pt-2 pb-3">
+                        Protease database
+                    </h4>
+
+                    <div id="Prevalence" class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    To capture and inactivate COVID-19, we focus on the detroy of the spikes on virus.
+                                    Thus, we’ve created a protease database searching software aming to find the best
+                                    protease for SARS COV2. As decribed, this database is not only for SARS COV2, but
+                                    other virus could use as well, when there is other virus outbreak, we could find the
+                                    relative protease more efficient.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Detection">
+                    <h4 class="py-3">
+                        Detection box
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    We also invented a 3D printed detection box which is portable and have fast virus
+                                    detection, instead of using PCR. This way, we could help the government to do the
+                                    primary screening at the airport. For this detection box, we could not only target
+                                    sars cov2 but also other virus, such as flu virus. The only change need to make is
+                                    just the receptor of the virus on the gel.
+                                </p>
+                                <p class="indent">
+                                    To sum up, both our protease database and our 3D detection box can be widely used.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Danger" class="pb-4">
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <div>
+                                <h5 class="py-3">Some ways to achieve this include:</h5>
+                                <ul>
+                                    <li>Add new documentation to an existing Part on that Part’s Registry page</li>
+                                    <li>This could be new information learned from literature</li>
+                                    <li>This could be new data collected from laboratory experiments</li>
+                                    <li>Build upon an existing software or hardware tool</li>
+                                    <li>Document troubleshooting that would be helpful to future teams</li>
+                                    <li>Create a 3D printed piece of hardware and document how to make it</li>
+                                </ul>
+                                <p>We invite you to also think outside of these areas for your contribution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
             // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
