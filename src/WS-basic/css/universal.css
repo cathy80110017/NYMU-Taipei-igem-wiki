@@ -3,6 +3,7 @@
 @font-face {
   font-family: "poppins";
   src: url("https://2020.igem.org/wiki/images/d/d8/T--NYMU-Taipei--Poppins-Medium.ttf");
+  font-weight: medium;
 }
 
 @font-face {
@@ -34,57 +35,19 @@
 
 p {
   text-align: justify;
+  font-weight: medium;
 }
 
 body {
+  margin-top: 16px;
   font-family: poppins;
   color: #363636;
-  line-height: 35px;
 }
 
 /* ICONS */
 
 svg {
   display: inline;
-}
-
-/* NAVBAR */
-
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-  pointer-events: none;
-}
-
-.navbar-brand {
-  background-image: url("../../assets/img/mini-logo-crown.png");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-width: 200px;
-  min-height: 63px;
-  margin: 0;
-}
-
-/* FOOTER */
-
-.footer {
-  font-weight: bold;
-  font-size: 0.5rem;
-}
-
-.footer-info {
-  background-color: #52b098;
-}
-
-.footer-sponsors img {
-  width: 30%;
-  height: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 /* UTILITIES */
