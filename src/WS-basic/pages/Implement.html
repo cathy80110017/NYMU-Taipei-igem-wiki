@@ -1,32 +1,231 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Target">
+                                <span>Our target groups and how to use our project</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Real">
+                                <span>Implement our project in the real world</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Safty">
+                                <span>Safty that we considered</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Challenges">
+                                <span>The Challenges</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Danger">
+                                <span>Some questions to help guide you</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDE NAV -->
+
+
+            <div class="col-md-9">
+                <section id="Target">
+                    <div class="py-5">
+                        <h3>Implementation</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <h4 class="pt-2 pb-3">
+                        Our target groups and how to use our project
+                    </h4>
+
+                    <div id="Prevalence" class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                <ol>
+                                    <li>Contact lens<br>
+                                        We designed our contact lens in the hope of protecting people from infection
+                                        through eyes. Therefore, the target group will be those who is used to wearing
+                                        contact lens. Compared to people wearing glasses, people who wear contact lenses
+                                        lack a physical barrier, so we want provide them with a accustomed way to resist
+                                        virus.</li>
+                                    <li>Mask<br>
+                                        Masks are universally used to protect us from viruses. We, of course,
+                                        want to promote this product to all human beings. We expect that people can get
+                                        used to wearing masks when going out.
+                                    </li>
+                                    <li>Detection box<br>Customs is a crutial place when it comes to epidemic
+                                        prevention. We designed this portable and costless box hoping that we can
+                                        quickly make a simple test when people enter another country to reduce the risk
+                                        of virus spreading.
+                                    </li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Real">
+                    <h4 class="py-3">
+                        Implement our project in the real world
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    We looking forward to cooperating with mask and contact lens companies which we had
+                                    visited and exchanged opinions about our project when we conceived our entire
+                                    haedware design. By cooperating, we can not only really understand whole situation
+                                    of their market deeper but also improve our designs, making them meet the reality
+                                    application more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="Safty">
+                    <h4 class="py-3">
+                        Safty that we considered
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Contact lens</h5>
+                                <p class="indent">
+                                <ol>
+                                    <li>We spare the central position not to conjugated with protein in order not to
+                                        cause vision blur.</li>
+                                    <li>We should make sure protein have bound hydrogel firmly in cas they fall off when
+                                        blinking.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Masks</h5>
+                                <p class="indent">
+                                <ol>
+                                    <li>We tried to avoid that our hydrogel account for too much area to influence the
+                                        fluency of breathing.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="py-2">Detacion box</h5>
+                                <p class="indent">
+                                <ol>
+                                    <li>The waste after detection shuld be saved well so as to avoid making virus in it
+                                        leak out.</li>
+                                    <li>We designed to let users just exhale rather than collect their sputum by cotton
+                                        swab, which makes detection process less umcomfortable.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="Challenges">
+                    <h4 class="py-3">
+                        The challenges
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                <ol>
+                                    <li>If we want promote our products, we should have them coorespond to the law about
+                                        medical equipment.
+                                    </li>
+                                    <li>How to reduce the degration of protein is also a challenge we need to consider.
+                                    </li>
+                                    <li>Whether the protease will cause effect in human body is unknown, so it’s a big
+                                        challenge now, for we can’t conduct human experiment.</li>
+                                </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                <section id="Danger" class="pb-4">
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <div>
+                                <h5 class="py-3">Some questions to help guide you:</h5>
+                                <ul>
+                                    <li>Who are your proposed end users?</li>
+                                    <li>How do you envision others using your project?</li>
+                                    <li>How would you implement your project in the real world?</li>
+                                    <li>What are the safty you would need to consider?</li>
+                                    <li>What other challenges would you need to consider?</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Notes:</h5>
+                                <ul>
+                                    <li>Teams already think about some of these issues for the Safety Form</li>
+                                    <li>This will encompass engineering, safety, and implementation</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
             // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
