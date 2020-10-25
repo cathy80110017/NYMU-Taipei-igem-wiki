@@ -31,6 +31,24 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("/src/assets/NotoSansTC/NotoSansTC-Medium.otf");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("/src/assets/NotoSansTC/NotoSansTC-Thin.otf");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("/src/assets/NotoSansTC/NotoSansTC-Bold.otf");
+  font-weight: bold;
+}
+
 /* UNIVERSAL STYLES */
 
 p {
