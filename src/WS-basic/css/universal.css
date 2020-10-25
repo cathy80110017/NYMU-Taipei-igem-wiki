@@ -32,19 +32,19 @@
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "NotoSansTC";
   src: url("/src/assets/NotoSansTC/NotoSansTC-Medium.otf");
   font-weight: medium;
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "NotoSansTC";
   src: url("/src/assets/NotoSansTC/NotoSansTC-Thin.otf");
   font-weight: thin;
 }
 
 @font-face {
-  font-family: "Noto Sans TC";
+  font-family: "NotoSansTC";
   src: url("/src/assets/NotoSansTC/NotoSansTC-Bold.otf");
   font-weight: bold;
 }
