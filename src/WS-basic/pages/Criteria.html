@@ -1,33 +1,298 @@
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Bronze">
+                                <span>Bronze</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Silver">
+                                <span>Silver</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Gold">
+                                <span>Gold</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDE NAV -->
+
+            <div class="col-md-9">
+                <section id="Bronze">
+                    <div class="py-5">
+                        <h3>Criteria</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <div class="pt-2 pb-4">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h4 class="pt-2 pb-3">
+                                    Bronze Medal
+                                </h4>
+
+                                <h5 class="pt-4 pb-3">Competition Deliverables</h5>
+
+                                <p>
+                                    According to the Deliverables page on iGEM’s website:
+                                </p>
+                                <ul class="pl-3">
+                                    <li class="py-2">
+                                        We have created a wiki page, which includes an Attributions page.
+                                    </li>
+                                    <li class="py-2">
+                                        One of our wiki page includes the Safety21 part of our project design.
+                                    </li>
+                                    <li class="py-2">
+                                        We’ve uploaded a poster for the Giant Jamboree.
+                                    </li>
+                                    <li class="py-2">
+                                        We have prepared for the team presentation video for the Jamboree.
+                                    </li>
+                                    <li class="py-2">
+                                        We have submitted the Judging form and safety forms before the deadline.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="../../assets/img/criteria_bronzemed.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="pt-4 pb-3">Attributions</h5>
+                                <p class="indent">
+                                    We have received generous help from teachers, professors and other teams during the
+                                    prepation period of our project. For the professor, we visit Szu-Hao Kung Associate
+                                    Professor, Szu-Hao Kung Associate Professor,and Ma, Che Alex. With differnet
+                                    background,
+                                    they gave us different suggestion and material. After consulting them, our team got
+                                    the
+                                    bacteria and fragment. With these material, we start constructing our own plasmids
+                                    and
+                                    produce the protein from Ecoli. In order to pay tribute to their kindness, we
+                                    created an
+                                    Attributions page(on wiki) for whom that has helped us. Thank for all their efforts!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="pt-4 pb-3">Project Description</h5>
+                                <p class="indent">
+                                    This year, NYMU-Taipei tries to capture and inactivate SARS-CoV-2. In daily life, we
+                                    are often exposed to many viruses; however, passively prevent it with mask is not
+                                    enough. Our goal is to actively destroy the virus, which more efficiently provide
+                                    every-day protection against this outraging pandemic. As a result, we try to make
+                                    protease by ourselves, which could detroy spikes, and make ACE2, which could capture
+                                    spike protein. To sum up,“Catch and destroy SARS COV2” is our goal. Further
+                                    information could be found in our description page on wiki.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="pt-4 pb-3">Contribution</h5>
+                                <p class="indent">
+                                    To capture and inactivate SARS-CoV-2, we focus on the destroy of the spike proteins
+                                    on SARS-CoV-2. Thus, we’ve created a protease database searching software aiming to
+                                    find the best protease for SARS COV2. As decribed, this database is not only for
+                                    SARS-CoV-2, but could also be used on other viruses as well, when there is another
+                                    virus outbreak, we could find the relative protease more efficiently. Besides, we
+                                    invented a 3D printed detection box which is portable and can attain fast virus
+                                    detection, instead of using PCR. This way, we could help the government to have the
+                                    primary screening at the airport. For more info, please check out our dry lab and
+                                    application page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="Silver" class="py-4">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4 class="pt-2 pb-3">
+                                Silver Medal
+                            </h4>
+
+                            <h5 class="pt-4 pb-3">Engineering Success</h5>
+                            <p class="indent">
+                                We’ve contructed fusion proteins for the capture and inactivation of COVID-19. First, we
+                                search for the protease which could interact with spike protein without detroy human
+                                body. Than we try to clone the sequence through PCR and GIBSON; however, it is hard to
+                                get the small fragment from the bacteria genomic DNA. We had tried to PCR several times
+                                from genomic DNA, but couldn’t get the result. After that, we rechoose our protease and
+                                buying the genomic DNA extraction kit. Eventually, we successfully clone the sequence
+                                and recobind it on our vector. See our engineering page for detailed information.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../../assets/img/criteria_silvermed.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Collaboration
+                            </h5>
+                            <p class="indent">
+                                We were honored for the help from Taiwan’s National Chung Cheng University(CCU) to
+                                ensure the validity of our experiment result, including repeating our PCR experiment. We
+                                provided a plasmid containing hACE2 and a pair of primer to make linear hACE2　fragment,
+                                and CCU uses GoTaq polymerase in their PCR experiment. For more information, please
+                                visit our collaboration page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Human Practices
+                            </h5>
+                            <p class="indent">
+                                Human practices play a big role in how we spread our ideas beyond the laboratory. To put
+                                synthetic biology in layman terms, we concluded that education will achieve the greatest
+                                effect. Hence, we launched a public education program in NCKU together. Students from
+                                NCKU were invited to join this exciting and interesting events. We aimed to raise their
+                                awareness toward recycling contact lens issues and sharing project ideas as well as what
+                                synthetic biology is. For more information, please visit our Human Practices and Public
+                                Engagement page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Proposed Implementation
+                            </h5>
+                            <p class="indent">
+                                Contact lens, mask, and detection box are our main projects. For contact lens and mask,
+                                the public is our target. Our product served as the enhances protecton devices, which
+                                could not only block but destroy the virus in the environment. By cooperating with the
+                                manufatoring companys, we could making our products meet the reality application more.
+                                However, safty that we considered included the lens central position not to conjugated
+                                with protein in order not to cause vision blur, and we should make sure protein have
+                                bound hydrogel firmly in case of they falling off when blinking. As for the challenges,
+                                if we want promote our products, we should have them coorespond to the law about medical
+                                equipment. For more information, please visit our Implementation page.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="Gold" class="py-4">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4 class="pt-2 pb-3">
+                                Gold Medal
+                            </h4>
+
+                            <h5 class="pt-4 pb-3">
+                                Integrated Human Practices
+                            </h5>
+
+                            <p class="indent">
+                                For our project, we have strong connections with human beings, including contacting with
+                                clinical doctor, professors, enterprises and, of course, public. Through our discussions
+                                with Doctor Chan and the people from the survey, our team decided on a final idea of
+                                using our product on protective equipment. In order for the masses to accept our
+                                product, we learned that our product should be convenient. Moreover, receiving advice
+                                from professors, our team was able to have more variety in the design. Last but not
+                                least, through our discussion with both companies, our team learned that it’s not easy
+                                for a product to go from production to the market. In conclusion, after approaching with
+                                them, we learned well on improving our project, which can benefit the whole worlds. For
+                                more information, please visit our Integrated Human Practices page.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../../assets/img/criteria_goldmed.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Project Modeling
+                            </h5>
+                            <p class="indent">
+                                This year, our modeling focuses on finding the bnding site, we use protein docking and
+                                find the affinity. It is an extremely important part to our project because it helps us
+                                accurately check and predict the proein-protein interaction due to the limitation of
+                                wet. In our project, there are two essential parts, we try to use modeling to prove our
+                                hypothesis is correct. First, ACE2 would catch spike protein. Second, protease(pepP) can
+                                detroy the spike. For more information, please visit our Modeling page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Improvement of an Existing Part
+                            </h5>
+                            <p class="indent">
+                                In our experiment, we made a construct which contains Red Fluorescent Protein with his
+                                tag on C terminal. we do this to test our gel covered with Cu2+ that can capture his
+                                tag. With rfp, we can immediately check whether it binds on the gel with naked eye.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="pt-4 pb-3">
+                                Proof of Concept
+                            </h5>
+                            <p class="indent">
+                                Our detection box is a high possible device use in real world. Firstly, since it is
+                                small, it can be made through 3D printing, make it costless and convenient. From the wet
+                                lab experiment, we could conclude our gel with ACE2 can actually catch the spike of the
+                                virus and make it visualized. Sencondly, since it is a simple concept of capture and
+                                fluorescent, we are able to detect the virus in breath quickly.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
-            // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
+        // $('body').scrollspy({ target: '.navbar-example' })
+    </script>
+</body>
+
 </html>
