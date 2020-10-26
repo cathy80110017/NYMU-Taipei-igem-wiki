@@ -224,6 +224,17 @@ p {
   margin-top: -1.5rem;
 }
 
+/* COLLABORATION PAGE ONLY */
+
+.collaboration-diagram {
+  height: 200px;
+}
+
+.collaboration-diagram > img {
+  max-height: 100%;
+  max-width: 33%;
+}
+
 /* EXPERIMENTS PAGE ONLY */
 
 .card-heading-style {
