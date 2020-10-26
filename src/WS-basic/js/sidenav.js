@@ -10,7 +10,7 @@ $(function () {
       },
       600
     );
-    $(this).addClass("active");
+    $(this).addClass("activeㄈ");
     e.preventDefault();
   });
 });
