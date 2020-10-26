@@ -12,33 +12,6 @@ p {
   box-sizing: border-box;
 }
 
-/* HEADINGS */
-
-h1 {
-  font-size: 96px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 56px;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 /* SCROLLSPY */
 
 .side-navbar {
@@ -46,6 +19,7 @@ h5 {
   padding-top: 10vh;
   height: 100vh;
 }
+
 .side-nav-menu {
   margin: 0;
   list-style: none;
@@ -154,6 +128,93 @@ h5 {
   justify-content: center;
 }
 
+<<<<<<< HEAD
+=======
+/* MEMBERS PAGE ONLY */
+
+.chinese-word-font {
+  font-family: NotoSansTC;
+  color: #181818;
+  font-weight: bold;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-block p {
+  line-height: 1rem;
+  text-align: center;
+}
+
+.rounded-img {
+  height: 31vh;
+  border-radius: 50%;
+}
+
+#Yi-Lin:hover {
+  content: url("/src/assets/img/Team/Catherine_2.JPG");
+}
+
+#Bo-Han:hover {
+  content: url("/src/assets/img/Team/Brian_2.JPG");
+}
+
+#You-Cheng:hover {
+  content: url("/src/assets/img/Team/Albert_2.JPG");
+}
+
+#Yu-Te:hover {
+  content: url("/src/assets/img/Team/Blue_2.JPG");
+}
+
+#Jo-An:hover {
+  content: url("/src/assets/img/Team/Miffy_2.JPG");
+}
+
+#Terrance:hover {
+  content: url("/src/assets/img/Team/Terrance_2.JPG");
+}
+
+#Yu-Chuan:hover {
+  content: url("/src/assets/img/Team/Charlie_2.JPG");
+}
+
+#Huang-Yen:hover {
+  content: url("/src/assets/img/Team/Michael_2.JPG");
+}
+
+#Jia-Yin:hover {
+  content: url("/src/assets/img/Team/Cathy_2.JPG");
+}
+
+#Tao-Wei:hover {
+  content: url("/src/assets/img/Team/David_2.JPG");
+}
+
+#Chun-Yi:hover {
+  content: url("/src/assets/img/Team/Chunyi_3.JPG");
+}
+
+#Chieh-Yun:hover {
+  content: url("/src/assets/img/Team/Ponpon_3.JPG");
+}
+
+#You-Sheng:hover {
+  content: url("/src/assets/img/Team/Huang_2.JPG");
+}
+
+#Yu-Fan:hover {
+  content: url("/src/assets/img/Team/Frenda_2.JPG");
+}
+
+#Hsin-Pei:hover {
+  content: url("/src/assets/img/Team/Jasmin_2.JPG");
+}
+>>>>>>> 434eb2e7be8c52ad9e59372116d73fc5ccdbf61f
 
 /* DESCRIPTIONPAGE ONLY */
 
@@ -165,6 +226,17 @@ h5 {
 
 #design-capture-img {
   margin-top: -1.5rem;
+}
+
+/* COLLABORATION PAGE ONLY */
+
+.collaboration-diagram {
+  height: 200px;
+}
+
+.collaboration-diagram > img {
+  max-height: 100%;
+  max-width: 33%;
 }
 
 /* EXPERIMENTS PAGE ONLY */
@@ -219,7 +291,7 @@ h5 {
 
 /* PARTS PAGE ONLY */
 .table-header {
-  background-color:  #52b098;
+  background-color: #52b098;
   color: aliceblue;
 }
 
@@ -240,6 +312,10 @@ h5 {
   position: relative !important;
 }
 
+.carousel-inner {
+  max-height: 100vh;
+}
+
 .carousel-item > img {
   margin-top: 80px;
   filter: blur(2px);
@@ -253,8 +329,9 @@ h5 {
 .carousel-title {
   position: absolute;
   z-index: 100;
-  top: 30%;
+  top: 45%;
   left: 50%;
+  transform: translateY(-50%);
   transform: translateX(-50%);
   text-align: center;
   border-bottom: 7px solid white;

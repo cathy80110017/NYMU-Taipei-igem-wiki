@@ -1,30 +1,28 @@
 <style>
-
     /* NAVBAR */
 
     .fixed-top {
         top: 16px;
     }
 
-    .dropdown:hover > .dropdown-menu {
-    display: block;
+    .dropdown:hover>.dropdown-menu {
+        display: block;
     }
 
-    .dropdown > .dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
+    .dropdown>.dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
     }
 
     .navbar-brand {
-    background-image: url("https://2020.igem.org/wiki/images/e/e3/T--NYMU-Taipei--logo_nav_brand.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 200px;
-    min-height: 63px;
-    margin: 0;
+        background-image: url("https://2020.igem.org/wiki/images/e/e3/T--NYMU-Taipei--logo_nav_brand.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 200px;
+        min-height: 63px;
+        margin: 0;
     }
-
 </style>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex text-bold" style="background-color: #52b098;">
@@ -34,8 +32,9 @@
             </div>
 
             <!-- Collapse button -->
-            <button class="navbar-toggler x-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler x-button" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -96,7 +95,7 @@
                             <a class="dropdown-item" href="/src/WS-basic/pages/HumanPractices.html">Human Practices</a>
                             <a class="dropdown-item" href="/src/WS-basic/pages/Collaborations.html">Collaborations</a>
                             <a class="dropdown-item" href="/src/WS-basic/pages/Education.html">Education</a>
-                            <a href="" class="dropdown-item">Partnership</a>
+                            <a href="/src/WS-basic/pages/Partnership.html" class="dropdown-item">Partnership</a>
                         </div>
                     </li>
 
@@ -106,13 +105,23 @@
                             Interlab
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
-                            <a href="/src/WS-basic/pages/" class="dropdown-item">Notebook</a>
+                            <a href="" class="dropdown-item">Notebook</a>
                             <a href="/src/WS-basic/pages/Experiments.html" class="dropdown-item">Experiments</a>
                         </div>
                     </li>
-                    <li class="nav-item m-auto">
-                        <a class="nav-link" href="/src/WS-basic/pages/AwardsMedals.html">Awards and Medals</a>
+
+                    <li class="nav-item dropdown m-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Awards
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                            <a href="" class="dropdown-item">Awards</a>
+                            <a href="/src/WS-basic/pages/Criteria.html" class="dropdown-item">Criteria</a>
+                        </div>
+
                     </li>
+
                 </ul>
             </div>
         </div>

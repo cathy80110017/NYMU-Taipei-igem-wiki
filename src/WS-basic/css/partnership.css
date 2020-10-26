@@ -1,0 +1,20 @@
+#news {
+  background-color: white;
+}
+
+#title {
+  max-width: 750px;
+  line-height: 80px;
+}
+
+.tag-container {
+  border: 2px solid #363636;
+}
+
+.header {
+  border-bottom: 4px solid #363636;
+}
+
+#header-img {
+  max-width: 750px;
+}
