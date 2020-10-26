@@ -319,6 +319,42 @@ h5 {
   color: #6b6b6b;
 }
 
+/* CAROUSELS */
+.carousel {
+  position: relative !important;
+}
+
+.carousel-item > img {
+  margin-top: 80px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.carousel-item {
+  position: relative !important;
+}
+
+.carousel-title {
+  position: absolute;
+  z-index: 100;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  border-bottom: 7px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 /* UTILITIES */
 
 hr {
