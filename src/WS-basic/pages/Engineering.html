@@ -1,32 +1,199 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <div class="col-md">
+                <section class="pb-4">
+                    <div class="py-5">
+                        <h3>Engineering</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="indent">
+                                    The very start goal of our project is to eliminate the suspending COVID-19 virus
+                                    particles in the air. Through synthetic biology, we could achieve specific capture
+                                    and inactivation. This could be helpful in highly dangerous or intricate working
+                                    place, such as the custom or IC chip factory, since the air flow needs extra
+                                    protection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="pb-4">
+                    <h4 class="pt-2 pb-3">
+                        Phase one design(March to July)
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="py-3 col-12">
+                                <p class="indent">
+                                    Through researching previous experiments, we found out that huamn receptor hACE2.
+                                    This could be used to capture the flowting virus in the air to fulfill our need.
+                                    Next, in order to inactivate the virus, we cameup with an idea to malfunction the
+                                    virus with a protease. According to documentation, COVID-19 virus enter human cell
+                                    through the binding between spike protein and human receptor hACE2. After that, a
+                                    human membrane protein called the TMPRSS2 will cut spike protein on S1/S2 domain,
+                                    enable the virus to enter human cell through membrane funsion.
+                                </p>
+                                <p class="indent">
+                                    Thus, our phase one design is to construct a fusion protein, which is consist of
+                                    hACE2, a linker and a selected protease. The protease is choosing according to
+                                    peptidase database “MEROPS”. We wish to find something only reacts with spike
+                                    protein rather than hACE2. The protease we choose was aminopeptidase N(pepN), which
+                                    is a E. coli strain K12 MG1655 protein.
+                                </p>
+                                <p class="indent">
+                                    As for how to detect the binding of spike protein and hACE2, we planned to apply a
+                                    FRET design between the two proteins. In our design, we choosed to put both
+                                    fluorescent proteins at the N terminal of spike and ACE2. Therefore, when the spike
+                                    protein and hACE2 bind to each other, the acceptor of FRET pair will emit light due
+                                    to the decrease of distance between the FRET pair.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="pb-4">
+                    <h4 class="pt-2 pb-3">
+                        Phase two design(Summer vacation)
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="py-3 col-12">
+                                <p class="indent">
+                                    During experiment, we found various problems about our original design. First, the
+                                    fusion protein with Fret(hACE2+linker+protease+fret) is far too big to construct and
+                                    express in E. coli(over 5000 bp). Second, the cloning of pepN wasn’t too easy, since
+                                    the genomic DNA of E. coli horbors more than 4M bp gene sequence. We had quite a
+                                    hard time adjusting the PCR condition. Lastly, there were still cleavage sites on
+                                    hACE2, which could lead to the inactivation of out fusion protein.
+                                </p>
+                                <p class="indent">
+                                    To solve these problems, we later add a his tag on the end of the plasmid to replace
+                                    the usage of Fret protein. The result will be demonstrate through western blotting
+                                    gel. The mass of protein various before and after protease cleavage. We also adjust
+                                    the denaturing time in the three-step cycle of PCR from standard 30 second to 3
+                                    minutes, which is meant to fully open the 4M genomic DNA. Lastly, we choose to use
+                                    hACE2’s RBD(receptor-binding domain) rather than full length in order to eliminate
+                                    possible cleavage site on it.
+                                </p>
+                                <p class="indent">
+                                    What’s noteworthy is that we choose KOD as our PCR enzyme in order to prevent
+                                    mutation cause by DNA polymerization. In comparision t enzyme Taq, KOD has a better
+                                    proofreading accuracy and thermostability. This could provide a better quality for
+                                    our engineering product. Moreover, Gidson assemble was used in order to combine
+                                    multiple DNA fragments simultaneously, enhancing the efficiency of our experiment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="pb-4">
+                    <h4 class="pt-2 pb-3">
+                        Phase three design(Septempber ~)
+                    </h4>
+                    <div class="pb-4">
+                        <div class="row">
+                            <div class="py-3 col-12">
+                                <p class="indent">
+                                    In the final pahse of our experiment, we replaced pepN with pepP after analyzing the
+                                    structure of pepN. This protease is structurally enclosed, making it hard to react
+                                    with big protein substrate such as spike protein. PepP(aminopeptidase P) is another
+                                    protease existing in E. coli strain K12 MG1655. The structure of pepP is a C-like
+                                    bar, which is relatively open and likely to react to larger substrate.
+                                </p>
+                                <p class="indent">
+                                    According to MEROPS’s data, PepP has four cleavage sites on spike protein(326 ~ 333
+                                    IVRFPNIT, 487 ~ 494 NCYFPLQS, 1049 ~ 1056 LMSFPQSA, 1086 ~ 1093 KAHFPREG, between
+                                    F&P). However, pepP left a cleavage site on hACE2’s RBD(protein sequence 364~371
+                                    DMAYAAQP, between Y&A), which could lead to further malfunction problem. As a
+                                    result, we created a point mutation on hACE2, changing sequence YAA into AAA to
+                                    prevent protease reaction. This design ensures the fusion protein intact and
+                                    function normally.
+                                </p>
+                                <p class="indent">
+                                    Finally, in case pepP can’t react with full length spike protein, we created spike
+                                    fragments of the cleavage sites. As research pointed out, pepP can cut small
+                                    fragments of protein(roughly 4.15~4.2 kDa). Each fragment are attached with his tag.
+                                    With western blotting method, we could differentiate different protein after
+                                    reaction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="pb-4">
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <h5 class="py-3">References</h5>
+                            <ol class="list">
+                                <li>Lan, J., Ge, J., Yu, J. et al. Structure of the SARS-CoV-2 spike receptor-binding
+                                    domain bound to the ACE2 receptor. Nature 581, 215–220 (2020).</li>
+                                <li>Benton, D.J., Wrobel, A.G., Xu, P. et al. Receptor binding and priming of the spike
+                                    protein of SARS-CoV-2 for membrane fusion. Nature (2020).</li>
+                                <li>Xia, S., Liu, M., Wang, C. et al. Inhibition of SARS-CoV-2 (previously 2019-nCoV)
+                                    infection by a highly potent pan-coronavirus fusion inhibitor targeting its spike
+                                    protein that harbors a high capacity to mediate membrane fusion. Cell Res 30,
+                                    343–355 (2020).</li>
+                                <li>https://www.ebi.ac.uk/merops/</li>
+                                <li>https://www.uniprot.org/uniprot/P04825</li>
+                                <li>Taq and Other Thermostable DNA Polymerases. (2008). Principles and Technical Aspects
+                                    of PCR Amplification, 103–118. doi:10.1007/978-1-4020-6241-4_7</li>
+                                <li>Lissandron, V., Terrin, A., Collini, M., D’alfonso, L., Chirico, G., Pantano, S., &
+                                    Zaccolo, M. (2005, October 21). Improvement of a FRET-based Indicator for cAMP by
+                                    Linker Design and Stabilization of Donor–Acceptor Interaction.
+                                </li>
+                                <li>P. Trigo-Mourino, T. Thestrup, O. Griesbeck, C. Griesinger, S. Becker, Dynamic
+                                    tuning of FRET in a green fluorescent protein biosensor. Sci. Adv. 5, eaaw4988
+                                    (2019).</li>
+                                <li>Han, F., Luo, Y., Ge, N. and Xu, J. (2008), Construction of fluorescence resonance
+                                    energy transfer vectors and their application in study of structure and function of
+                                    signal transducers and activators of transcription 1. Acta Biochimica et Biophysica
+                                    Sinica, 40: 934-942. doi:10.1111/j.1745-7270.2008.00480.x</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb-4">
+                    
+                </section>
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
-            // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
+    </script>
+</body>
+
 </html>
