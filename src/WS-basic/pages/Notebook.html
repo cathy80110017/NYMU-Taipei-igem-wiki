@@ -1,31 +1,625 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
 
-        <div class="container-xl main-container">
-            
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container main-container pointer-active" data-spy="scroll">
+        <h3>Experiments</h3>
+        <hr class="divide-line">
+
+        <div class="accordion py-5" id="accordion">
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-1">
+                    <h2 data-toggle="collapse" data-target="#collapse-1" aria-expanded="true"
+                        aria-controls="collapse-1">
+                        <div>
+                            <h5 class="pointer">May___Brainstorming and topic decision</h5>
+                        </div>
+                    </h2>
+                </div>
+
+                <div id="collapse-1" class="collapse" aria-labelledby="heading-1">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">We looked back to numerous igem teams project in the past few years and
+                                    tried to choose our topic. We then reached a consensus to do a project that will
+                                    help
+                                    improve the situation of COVID-19, which is ravaging the world. After tons of
+                                    discussion
+                                    and document reading, we planned to fight the threatening corona virus by targeting
+                                    the
+                                    spike protein on it’s surface.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-2">
+                    <h2 data-toggle="collapse" data-target="#collapse-2" aria-expanded="true"
+                        aria-controls="collapse-2">
+                        <div>
+                            <h5 class="pointer">June___Gain more information and construct our project</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-2" class="collapse" aria-labelledby="heading-2">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">We came up with several ideas to avoid being infected by SARS-CoV2,
+                                    such
+                                    as FRET assay for detection, using a protease for inactivation, and some
+                                    applications
+                                    that may help our design. Divided into small groups, we started to look deep into
+                                    our
+                                    plan and design every part in detail. Lots of paper research are done in this phase
+                                    and
+                                    an initial prototype of our project is formed.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-3">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true"
+                        aria-controls="collapse-3">
+                        <div>
+                            <h5 class="pointer">6/29-7/5___First week in the lab</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-3" class="collapse" aria-labelledby="heading-3">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">We did a comprehensive clean up of our lab, including sterilizing
+                                        containers we might use, throwing away expired solutions from the fridge and
+                                        putting on new bench paper.
+                                        Made account and collected virus genome data from database.</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We started to look for the sequences we may need to purchase form
+                                        addgene and learn how to design primers for later plasmid construction.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-4">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true"
+                        aria-controls="collapse-4">
+                        <div>
+                            <h5 class="pointer">7/6-7/12___The start of wet lab</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-4" class="collapse" aria-labelledby="heading-4">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">We made some LB plates with different antibiotics and started to
+                                        get familiar with the instruments in the lab</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We listed the plasmid we may construct and decide which method to
+                                        connect the DNA fragments (Restriction enzyme ligation or Gibson assembly)</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-5">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-5" aria-expanded="true"
+                        aria-controls="collapse-5">
+                        <div>
+                            <h5 class="pointer">7/13-7/19</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-5" class="collapse" aria-labelledby="heading-5">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">We did LB plate planting and plasmid extraction to the bacteria
+                                        with plasmids we bought from addgene, then use restriction enzymes to check if
+                                        we got the right plasmid. We also made a list of what restriction enzymes and
+                                        DNA markers we have in the lab.
+                                        Made preliminary results from virus sequence analysis.</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We communicated with NCKU igem team and are looking forward to
+                                        have further discussion and exchanges later in the summer.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-6">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true"
+                        aria-controls="collapse-6">
+                        <div>
+                            <h5 class="pointer">7/20-7/26</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-6" class="collapse" aria-labelledby="heading-6">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">Continued to do plasmid extraction and store them in the fridge
+                                        for later PCR.
+                                        Modeled virus protein structural sequence to see important mutation sites in 3D.
+                                    </p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We had a vigorous discussion about which kit and what tag(SUMO or
+                                        his tag) we are going to use for the protein purification of our fusion protein
+                                        constructs. Also, we decided what linker to use for our fusion protein after a
+                                        series of paper research.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-7">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
+                        aria-controls="collapse-7">
+                        <div>
+                            <h5 class="pointer">7/27-8/2</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-7" class="collapse" aria-labelledby="heading-7">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">We cut the plasmid (Scarlet I-FRET 10-Venus) with restriction
+                                        enzymes and then collected the sequence of Venus fp and Scarlet-I fp by gel
+                                        electrophoresis and gel extraction. The results of gel extraction is known by
+                                        nanodrop spectroscopy.</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We spent a great afternoon having an interview with doctor Zhan
+                                        and learnt a lot from his experience and advices.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-8">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-8" aria-expanded="true"
+                        aria-controls="collapse-8">
+                        <div>
+                            <h5 class="pointer">8/3-8/9</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-8" class="collapse" aria-labelledby="heading-8">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">Keep doing plasmid extraction (because some of the plasmids remain
+                                        having low concentration) and restriction enzyme digestion as last week.</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">Some of us visited a professor in Chung Xing University to get
+                                        information about the use of chitin tag and how to utilize the chitin tag to let
+                                        our construct bind to the contact lens’ surface.
+                                        However, The professor advised us not to use chitin tag and introduced another
+                                        method using merely his tag to achieve our goal.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-9">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-9" aria-expanded="true"
+                        aria-controls="collapse-9">
+                        <div>
+                            <h5 class="pointer">8/10-8/16</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-9" class="collapse" aria-labelledby="heading-9">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: Venus FP, ACE2, bacterial expression vector</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We started to construct our wiki using hackMD website. The rough
+                                        framework of our wiki is formed.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-10">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-10" aria-expanded="true"
+                        aria-controls="collapse-10">
+                        <div>
+                            <h5 class="pointer">8/17-8/23</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-10" class="collapse" aria-labelledby="heading-10">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: Venus and Scarlet FP, ACE2
+                                        Gibson assembly progress: ACE2 RBD</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We had an online seminar with NCKU igem team, at which exchange
+                                        our thoughts and discuss about the challenges we met and find a solution. We
+                                        also discussed about our collaboration about human practice related to contact
+                                        lens (which is a part we have in common).</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-11">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-11" aria-expanded="true"
+                        aria-controls="collapse-11">
+                        <div>
+                            <h5 class="pointer">8/24-8/30</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-11" class="collapse" aria-labelledby="heading-11">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: pepN(failed), spike protein(low yield)
+                                        Transformation: ACE2( to BL21 strain).</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We had another online seminar with CSMU igem team and had a good
+                                        time sharing our thoughts and advices about each other’s’ project. We also had a
+                                        lab collaboration(PCR double check) scheduled.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-12">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-12" aria-expanded="true"
+                        aria-controls="collapse-12">
+                        <div>
+                            <h5 class="pointer">8/31-9/6</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-12" class="collapse" aria-labelledby="heading-12">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: pepN(failed), spike protein(low yield)
+                                        Transformation: ACE2( to BL21 strain)</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We visited Prevision contact lens factory and demonstrated our
+                                        design to them.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-13">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-13" aria-expanded="true"
+                        aria-controls="collapse-13">
+                        <div>
+                            <h5 class="pointer">9/7-9/13</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-13" class="collapse" aria-labelledby="heading-13">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: pepN(failed), spike protein(low yield)</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We started our collaboration events with NCKU igem team,
+                                        propagating citizens not to discard contact lens carelessly after use.(Slogan:
+                                        Throw contact lens properly, marines life live more happily) Also, we started to
+                                        draw up the framework of our team promotion video.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-14">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-14" aria-expanded="true"
+                        aria-controls="collapse-14">
+                        <div>
+                            <h5 class="pointer">9/14-9/20</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-14" class="collapse" aria-labelledby="heading-14">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: pepN(failed), spike protein(low yield).</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We find out that making contact lens as our only product may be
+                                        lacking persuasion, so we discussed if there are other kinds of application our
+                                        construct can be used.
+                                        Also, the protease we chosen (pepN) was found not able to cut spike protein, so
+                                        we immediately initiated a new search for a replacement.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-15">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-15" aria-expanded="true"
+                        aria-controls="collapse-15">
+                        <div>
+                            <h5 class="pointer">9/21-9/27</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-15" class="collapse" aria-labelledby="heading-15">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: ACE2, Venus & Scarlet FP, Spike protein(low yield).
+                                    </p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">We’ve finalized our team promotion video and determined our
+                                        project name “Off The Crown”. We also decided which track of igem we are
+                                        participating in.
+                                        We came up with another protease(pepP) ordered the primers to construct its
+                                        plasmid. Furthermore, in case the spike protein is too big for the protease to
+                                        cut, we extracted the four pepP cleavage sites on spike protein and created
+                                        fragments that has 35bp of DNA front and behind the cleavage site.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-16">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-16" aria-expanded="true"
+                        aria-controls="collapse-16">
+                        <div>
+                            <h5 class="pointer">9/28-10/4</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-16" class="collapse" aria-labelledby="heading-16">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">We’ve finalized our team promotion video and determined our
+                                        project name “Off The Crown”. We also decided which track of igem we are
+                                        participating in.
+                                        We came up with another protease(pepP) ordered the primers to construct its
+                                        plasmid. Furthermore, in case the spike protein is too big for the protease to
+                                        cut, we extracted the four pepP cleavage sites on spike protein and created
+                                        fragments that has 35bp of DNA front and behind the cleavage site..</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">
+                                        The second plan of our application is determined (detection box DeBux), and we
+                                        started to design the structure of the box and preparing to use 3D printing to
+                                        form its structure.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-17">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-17" aria-expanded="true"
+                        aria-controls="collapse-17">
+                        <div>
+                            <h5 class="pointer">10/5-10/11</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-17" class="collapse" aria-labelledby="heading-17">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">Started to construct the gel we are going to stick our fusion
+                                        protein to(Using poly HEMA).
+                                        Gibson assembly progress: pepP only(success)
+                                        Transformation: pepP only(to BL21 strain).</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">Wiki description page and home page design finished.
+                                        Criteria “excellence in another area” done (collaboration with NCKU igem team).
+                                        Integrated human practice recorded and organized.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-18">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-18" aria-expanded="true"
+                        aria-controls="collapse-18">
+                        <div>
+                            <h5 class="pointer">10/12-10/18</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-18" class="collapse" aria-labelledby="heading-18">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">PCR progress: cut 1-4 spike fragment & vector, P+A pepP, ACE2, &
+                                        vector
+                                        Gibson assembly progress: spike cut 3&4
+                                        Protein purification: pepP, RFP, ACE2
+                                        Perform oxidization to our gel(KMnO4)</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent">Started to write our judging form</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-19">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-19" aria-expanded="true"
+                        aria-controls="collapse-19">
+                        <div>
+                            <h5 class="pointer">10/19-10/25</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-19" class="collapse" aria-labelledby="heading-19">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent">Gibson assembly progress: spike cut 1-3, PepP+ACE2(success)
+                                        Protein purification: pepP, RFP, Spike cut4, ACE2
+                                        Test the ability of our gel to bind to his tagged protein.
+                                        pepP cleavage test(use SDS PAGE and Western Blot to check the results.</p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent"></p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header card-heading-style" id="heading-20">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapse-20" aria-expanded="true"
+                        aria-controls="collapse-20">
+                        <div>
+                            <h5 class="pointer">10/26-10/28</h5>
+                        </div>
+                    </h2>
+                </div>
+                <div id="collapse-20" class="collapse" aria-labelledby="heading-20">
+                    <div class="card-body row card-box-style justify-content-center">
+                        <div class="col-11 ">
+                            <ul>
+                                <li class="py-2">Lab doings<br>
+                                    <p class="indent"></p>
+                                </li>
+                                <li class="py-2">Other issues<br>
+                                    <p class="indent"></p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
-        </script>
-    </body>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
+
+        var isCollapsed = [true, true, true];
+        var bs = document.querySelectorAll(".pointer");
+        bs.forEach(function (b, i) {
+            b.addEventListener("click", function (e) {
+                console.log(123);
+                if (isCollapsed[i]) {
+                    b.classList.add("active");
+                } else {
+                    b.classList.remove("active");
+                }
+                isCollapsed[i] = !isCollapsed[i];
+            });
+        })
+    </script>
+</body>
+
 </html>
