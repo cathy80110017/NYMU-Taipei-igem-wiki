@@ -16,7 +16,7 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
     <div id="navbar"></div>
 
-    <div class="container main-container">
+    <div class="container-xl main-container">
         <div class="row">
 
             <!-- START SIDE NAV -->
@@ -65,20 +65,14 @@
                             <div class="col-12">
                                 <p class="indent">
                                     Our design idea is to capture and denature the SARS-CoV-2 using our customized
-                                    protein. We
-                                    chose the receptor-binding domain (RBD) of human angiotensin-converting enzyme 2
-                                    (hACE2) as
-                                    the capturer of SARS-CoV-2. The spike protein on the surface of the virus could bind
-                                    with
-                                    hACE2(RBD) and enter host cells via this mechanism. Moreover, we attached a protease
-                                    to the
-                                    bottom of the hACE2(RBD) to denature the spike proteins captured. By doing so, we
-                                    could not
+                                    protein. We chose the receptor-binding domain (RBD) of human angiotensin-converting
+                                    enzyme 2 (hACE2) as the capturer of SARS-CoV-2. The spike protein on the surface of
+                                    the virus could bind with hACE2 (RBD) and enter host cells via this mechanism.
+                                    Moreover, we attached a protease, which is aminopeptidase P(pepP), to the bottom of
+                                    the hACE2 (RBD) to denature the spike proteins captured. By doing so, we could not
                                     only create an effective protective surface against SARS-CoV-2 but also deactivate
-                                    the virus
-                                    we captured simultaneously. The following paragraph will get into more detail about
-                                    the
-                                    procedures of our experiment.
+                                    the virus we captured simultaneously. The following paragraph will get into more
+                                    detail about the procedures of our experiment.
                                 </p>
                             </div>
                         </div>
@@ -100,18 +94,13 @@
                         Capturing
                     </h4>
                     <div class="pb-4">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col-12 col-md-9">
                                 <p class="indent">
                                     It has been proven that the receptor-binding domain of the spike protein of
-                                    SARS-CoV-2 can
-                                    bind to the cell receptor ACE2 when infecting human beings(see figure below). By
-                                    utilizing
-                                    this fact, we design our device to capture SARS-CoV-2 by hACE2 when the virus passes
-                                    our
-                                    device. To be more specific, we put hACE2 on gel made by us for detection, and we
-                                    connect
-                                    hACE2 and pepP together for inactivation.
+                                    SARS-CoV-2 can bind to the cell receptor ACE2 when infecting human beings (see
+                                    figure below). By utilizing this fact, we designed for a part of our construct to be
+                                    a synthetic ACE2 receptor binding domain to capture the virus.
                                 </p>
                             </div>
 
@@ -142,25 +131,27 @@
                         Detection
                     </h4>
                     <div class="pb-4">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col-12 col-md-9">
                                 <p class="indent">
-                                    We designed a tiny box which can detect if there is SARS-CoV-2 in the user’s
-                                    breathe. Inside
-                                    the box, there is a piece of gel with hACE2. We add His tag on hACE2 so that His tag
-                                    on
-                                    hACE2 can chelate with Co2+; therefore, can be presented on the surface of our gel
-                                    with
-                                    Co2+. Meanwhile, we add red fluorescent protein(RFP) to hACE2 construct in order to
-                                    show if
-                                    one has SARS-CoV-2. Firstly, we would let the user blow in our device. After one
-                                    blowing in
-                                    our device, the gel with hACE2 would capture spike protein as mentioned above, if
-                                    any, and
-                                    then we use wash buffer to wash off hACE2 without spike. Lastly, only hACE2 with
-                                    spike would
-                                    be left on the gel, and RFP would show if one is infected with SARS-CoV-2 and attain
-                                    detection.
+                                    We designed a tiny box which can detect if there is SARS-CoV-2 in the user’s breath.
+                                    Inside the box, there is a piece of gel and ACE2. His tag is added to hACE2
+                                    construct so that ACE2 can chelate with Co2+ on our gel, and thus can be presented
+                                    on the surface of our gel. To achieve detection, we attached a red fluorescent
+                                    protein(RFP) to our designed ACE2 construct since RFP is visible to the naked eye.
+                                    This design would show if one’s breath contains SARS-CoV-2 visibly.
+
+                                    How do we use this product? Firstly, we would let the user blow in the box through a
+                                    hose on it. After blowing in our device, the gel with hACE2 would capture spike
+                                    protein as mentioned above, if any. Next, we add ACE2 with RFP to the box, and then
+                                    gently shake the box for about three minutes in order to let all the spike proteins
+                                    on the virus bind tightly to the ACE2 attached with red fluorescent protein.
+                                    Afterwards, we use wash buffer (PBST) to wash off ACE2 without spike binding.
+                                    Lastly, only ACE2 with spike would be left on the gel, and RFP would show if one is
+                                    infected with SARS-CoV-2 and attain detection.
+
+                                    More details on the design of the box can be found in the Application page on our
+                                    wiki.
                                 </p>
                             </div>
 
@@ -192,7 +183,7 @@
                             <h5 class="h5 text-center">
                                 SARS-CoV-2 is captured and detected
                             </h5>
-                            <img class="img-fluid py-4"
+                            <img class="img-fluid"
                                 src="https://2020.igem.org/wiki/images/7/70/T--NYMU-Taipei--detection_7.gif" alt="">
                         </div>
                     </div>
@@ -205,17 +196,25 @@
                         Inactivating
                     </h4>
                     <div class="pb-4">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col-12 col-md-9">
                                 <p class="indent">
-                                    We want to inactivate SARS-CoV-2 by preventing the virus from entering our cell. To
-                                    achieve
-                                    this goal, we came up with an idea which is using a protease to cut spike protein of
-                                    SARS-CoV-2. Research indicated that pepP could be the appropriate protease, so we
-                                    add pepP
-                                    to hACE2 construct. In ideal situation, pepP would cut spike which is captured by
-                                    hACE2, and
-                                    thus make the virus unable to infect us.
+                                    We want to inactivate SARS-CoV-2 by preventing the virus from entering our cells. To
+                                    achieve this goal, we came up with an idea of using a protease to cut the spike
+                                    protein of SARS-CoV-2.
+
+                                    Past research has indicated that Xaa-Pro aminopeptidase, also known as pepP, could
+                                    be the appropriate protease to inactivate spike protein, and checking through
+                                    protein interaction modeling, our final choice was to add pepP to our ACE2
+                                    construct. Ideally, the ACE2 part of our construct would capture the virus and the
+                                    pepP part would cut spike protein into many fragments. This would damage spike
+                                    protein, thus efficiently making the virus unable to infect humans since SARS-CoV-2
+                                    relies on spike protein to enter host cells. Eventually, we applied our design to
+                                    face masks so that we can be free from worries about contacting virus when touching
+                                    face masks.
+
+                                    Further details of application on face masks will be shown in Application page of
+                                    our wiki.
                                 </p>
                             </div>
 
@@ -225,9 +224,9 @@
                             </div>
                             <div class="gif-container py-4">
                                 <h5 class="h5 text-center">
-                                    Spike protein comes into contact with our device
+                                    Spike protein comes into contact
                                 </h5>
-                                <img class="img-fluid py-4"
+                                <img class="img-fluid"
                                     src="https://2020.igem.org/wiki/images/4/46/T--NYMU-Taipei--design_overview1.jpeg"
                                     alt="">
                             </div>
@@ -235,7 +234,7 @@
                                 <h5 class="h5 text-center">
                                     Spike protein binds with Ace2 RBD and our aminopeptidase takes effect
                                 </h5>
-                                <img class="img-fluid py-4"
+                                <img class="img-fluid"
                                     src="https://2020.igem.org/wiki/images/8/88/T--NYMU-Taipei--design_overview2.gif"
                                     alt="">
                             </div>
@@ -243,7 +242,7 @@
                                 <h5 class="h5 text-center">
                                     Spike protein is cleaved by our aminopeptidase
                                 </h5>
-                                <img class="img-fluid py-4"
+                                <img class="img-fluid"
                                     src="https://2020.igem.org/wiki/images/c/c3/T--NYMU-Taipei--design_overview3.gif"
                                     alt="">
                             </div>
@@ -251,11 +250,28 @@
                                 <h5 class="h5 text-center">
                                     Spike protein successfully inactivated
                                 </h5>
-                                <img class="img-fluid py-4"
+                                <img class="img-fluid"
                                     src="https://2020.igem.org/wiki/images/2/2c/T--NYMU-Taipei--design_overview4.jpeg" />
 
                             </div>
                         </div>
+
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="h5 py-4 align-self-start">Xaa-Pro aminopeptidase (pepP)</h5>
+                            <p class="indent">
+                                The gene of Xaa-Pro aminopeptidase belongs to a network of genes which facilitate
+                                stress-induced mutagenesis (SIM) in E. coli K12. The length of Xaa-Pro
+                                aminopeptidase is 1326bp / 441aa. The active site residues, His243 and His361 are
+                                required for catalysis; His350 and Arg404 are involved in the proline substrate
+                                specificity; His350 and Arg404 are involved in the proline substrate specificity;
+                                Tyr387 and Arg404 are important for substrate hydrolysis. For more 3D structure
+                                details, please visit <a target="_blank" class="text-bold"
+                                    href="https://www.rcsb.org/structure/1wl9">RCSB</a>.
+                            </p>
+                            <img src="https://2020.igem.org/wiki/images/9/93/T--NYMU-Taipei--design_pepP.png"
+                                class="img-fluid" style="max-width: 400px;">
+                        </div>
+
                     </div>
                 </section>
 
@@ -267,11 +283,83 @@
                         <div class="py-3 col-12">
                             <h5 class="h5 py-3">References</h5>
                             <ol class="list">
-                                <li>NOT DONE!!!!</li>
+                                <li>
+                                    Lan, J., Ge, J., Yu, J. et al. Structure of the SARS-CoV-2 spike receptor-binding
+                                    domain bound to the ACE2 receptor. Nature 581, 215–220 (2020).
+                                </li>
+                                <li>
+                                    Al Mamun AA, Lombardo MJ, Shee C, Lisewski AM, Gonzalez C, Lin D, Nehring RB,
+                                    Saint-Ruf C, Gibson JL, Frisch RL, Lichtarge O, Hastings PJ, Rosenberg SM (2012).
+                                    “Identity and function of a large gene network underlying mutagenic repair of DNA
+                                    breaks.” Science 338(6112);1344-8.
+                                </li>
+                                <li>
+                                    Fleminger G, Carmel A, Goldenberg D, Yaron A (1982). “Fluorogenic substrates for
+                                    bacterial aminopeptidase P and its analogs detected in human serum and calf lung.”
+                                    Eur J Biochem 125(3);609-15.
+                                </li>
+                                <li>
+                                    Graham SC, Bond CS, Freeman HC, Guss JM (2005). “Structural and functional
+                                    implications of metal ion selection in aminopeptidase P, a metalloprotease with a
+                                    dinuclear metal center.” Biochemistry 44(42);13820-36.
+                                </li>
+                                <li>
+                                    Graham SC, Lilley PE, Lee M, Schaeffer PM, Kralicek AV, Dixon NE, Guss JM (2006).
+                                    “Kinetic and crystallographic analysis of mutant Escherichia coli aminopeptidase P:
+                                    insights into substrate recognition and the mechanism of catalysis.” Biochemistry
+                                    45(3);964-75.
+                                </li>
+                                <li>
+                                    Hsu YT, Su CY, Du HC, Jao SC, Li WS (2008). “Evaluation of organophosphorus
+                                    chemicals-degrading enzymes: a comparison of Escherichia coli and human cytosolic
+                                    aminopeptidase P.” Chem Biodivers 5(7);1401-11.
+                                </li>
+                                <li>
+                                    Jao SC, Huang LF, Hwang SM, Li WS (2006). “Tyrosine 387 and arginine 404 are
+                                    critical in the hydrolytic mechanism of Escherichia coli aminopeptidase P.”
+                                    Biochemistry 45(6);1547-53.
+                                </li>
+                                <li>
+                                    Kuhn ML, Zemaitaitis B, Hu LI, Sahu A, Sorensen D, Minasov G, Lima BP, Scholle M,
+                                    Mrksich M, Anderson WF, Gibson BW, Schilling B, Wolfe AJ (2014). “Structural,
+                                    kinetic and proteomic characterization of acetyl phosphate-dependent bacterial
+                                    protein acetylation.” PLoS One 9(4);e94816.
+                                </li>
+                                <li>
+                                    Liu JW, Hadler KS, Schenk G, Ollis D (2007). “Using directed evolution to improve
+                                    the solubility of the C-terminal domain of Escherichia coli aminopeptidase P.
+                                    Implications for metal binding and protein stability.” FEBS J 274(18);4742-51.
+                                </li>
+                                <li>
+                                    Wilce MC, Bond CS, Dixon NE, Freeman HC, Guss JM, Lilley PE, Wilce JA (1998).
+                                    “Structure and mechanism of a proline-specific aminopeptidase from Escherichia
+                                    coli.” Proc Natl Acad Sci U S A 95(7);3472-7.
+                                </li>
+                                <li>
+                                    Yoshimoto T, Murayama N, Honda T, Tone H, Tsuru D (1988). “Cloning and expression of
+                                    aminopeptidase P gene from Escherichia coli HB101 and characterization of expressed
+                                    enzyme.” J Biochem (Tokyo) 104(1);93-7.
+                                </li>
+                                <li>
+                                    Yoshimoto T, Tone H, Honda T, Osatomi K, Kobayashi R, Tsuru D (1989). “Sequencing
+                                    and high expression of aminopeptidase P gene from Escherichia coli HB101.” J Biochem
+                                    (Tokyo) 105(3);412-6.
+                                </li>
+                                <li>
+                                    Yoshimoto T, Orawski AT, Simmons WH (1994). “Substrate specificity of aminopeptidase
+                                    P from Escherichia coli: comparison with membrane-bound forms from rat and bovine
+                                    lung.” Arch Biochem Biophys 311(1);28-34.
+                                </li>
+                                <li>
+                                    A T Orawski, J P Susz, W H Simmons (1987). “Aminopeptidase P from bovine lung:
+                                    solubilization, properties, and potential role in bradykinin degradation.” Mol Cell
+                                    Biochem. Jun;75(2):123-32.
+                                </li>
                             </ol>
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
 

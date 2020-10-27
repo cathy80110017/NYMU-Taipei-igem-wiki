@@ -50,6 +50,13 @@
 }
 
 /* UNIVERSAL STYLES */
+
+body {
+  font-family: poppins;
+  color: #363636;
+  font-weight: medium;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +64,7 @@
 }
 
 p {
+  font-size: 16px;
   text-align: justify;
   font-weight: medium;
   line-height: 40px;
@@ -69,9 +77,13 @@ body {
   background-color: #f5f5f5;
 }
 
-body a {
-  color: inherit;
+a {
+  color: #363636;
   text-decoration: none;
+}
+
+a:visited {
+  color: #363636 !important;
 }
 
 /* HEADINGS */

@@ -1,17 +1,3 @@
-body {
-  font-family: poppins;
-  color: #363636;
-  font-weight: medium;
-}
-
-p {
-  line-height: 35px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 /* SCROLLSPY */
 
 .side-navbar {
