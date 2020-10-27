@@ -72,7 +72,7 @@ p {
 
 .side-navbar .side-nav-menu li .dot span {
   display: inline-block;
-  width: 146.32px;
+  width: 145px;
   opacity: 0;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -81,7 +81,7 @@ p {
   background-color: #52b098;
   padding: 10px 20px;
   border-radius: 3px;
-  margin-left: 30px;
+  margin-left: 0px;
   transform: translateX(-20px);
   transition: all 0.3s ease;
 }
