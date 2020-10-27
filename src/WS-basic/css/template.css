@@ -145,7 +145,7 @@ p {
 .gif-container > h5 {
   width: 70%;
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }
