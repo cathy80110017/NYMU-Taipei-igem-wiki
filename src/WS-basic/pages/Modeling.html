@@ -68,11 +68,10 @@
                         <div class="row">
                             <div class="col-12">
                                 <p class="indent">
-                                    Docking protein-protein interation and try to find the binding site. Due to the
-                                    limitation of wet lab, we couldn’t make ACE2 directly from e.coli , and the whole
-                                    spike protein is hard to construct. Therefore, we use modeling to prove our
-                                    hypothesis, which are ACE2 would catch spike protein and protease(pepP) can destroy
-                                    spike protein, correct.
+                                    Due to the limitations of wet lab, we use modeling to prove our hypothesis of which
+                                    ACE2 would catch spike protein and if protease(pepP) can destroy spike protein
+                                    correctly. To achieve this goal, we looked at docking and protein-protein
+                                    interaction in order to find the binding site.
                                 </p>
                             </div>
                         </div>
@@ -101,12 +100,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <p class="indent">
-                                    We use SeeSar for docking for all ligands able during editing and clashes can also
-                                    be visualized, to better guide the editing process. During docking, it is often
-                                    times necessary to be a little more forgiving about clashes, as poses are generated
-                                    on a coarse-grain grid of torsion angles only. For this reason, added clash
-                                    tolerance as an adjustable parameter in Docking mode, besides affinity, can be also
-                                    showed on the table.
+                                    We use SeeSar for docking all the ligands that are available during editing, clashes
+                                    can also be visualized to better guide the editing process. During docking, it is
+                                    often times necessary to be a little more forgiving about clashes as poses are
+                                    generated on a coarse-grain grid of torsion angles only. For this reason, we added
+                                    clash tolerance as an adjustable parameter in Docking mode besides affinity, which
+                                    can also be shown on the table.
                                 </p>
                             </div>
                             <div class="col-12">
@@ -132,11 +131,15 @@
                             <div class="col-12 col-md-8">
                                 <h5 class="h5 py-2">spike and pepP affinity</h5>
                                 <p class="indent">
-                                    There are lots of pockets on the spike proteins. After filtering the sequence, we
-                                    select the pocket with the sequence Pro-Phe(in the reference, it said pepP would cut
-                                    the sequence Pro-Phe into two pieces) in order, and then load pepP as ligand. As for
-                                    the docking analysis, we found there are several poses which shows high affininty.
-                                    From the outcome, we could conclude our protease(pepP) is highly possible to binding
+                                    There are lots of pockets on a spike protein.(figure 1) After filtering the
+                                    sequence, we select the pocket with the sequence Pro-Phe in order(in the reference,
+                                    it said that pepP would cut the sequence Pro-Phe into two pieces), and find the site
+                                    which is on outer space. We then load pepP as ligand. As for docking analysis, we
+                                    found that there are several poses which shows high affinity without clashes.
+                                </p>
+                                <p class="indent">
+                                    From the outcome, we could conclude our protease(pepP) is highly
+                                    possible to binding
                                     on the spike protein and destroy it as expected.
                                 </p>
                             </div>
@@ -151,12 +154,12 @@
                             <div class="col-12 col-md-8">
                                 <h5 class="h5 py-2">ACE2 and pepP affinity</h5>
                                 <p class="indent">
-                                    Though there are 10 pockets on the ACE2 RBD, there is only one pocket(figure 1)
-                                    contains Pro-Phe ordered sequnce. Fortuneately, that pocket is the only pocket in
-                                    the core instead of on the outer side. We then use the pocket to dock the spike
-                                    affinity(figure 2), which shows there is still the chance for ACE2 RBD to bind with
-                                    spike. To prevent this risk, we make a point mutation to make the Pro become???..,
-                                    which would make pepP no finction in the original site.
+                                    Though there are 10 pockets on the ACE2 RBD, there is only one pocket(figure 1) that
+                                    contains Pro-Phe ordered sequence. Fortunately, that pocket is the only pocket
+                                    located in the core instead of on the outer side. We then use the pocket to dock the
+                                    spike affinity(figure 2). Results show that there is still a chance for ACE2 RBD to
+                                    bind with spike. To prevent this risk, we make a point mutation to make the YAA
+                                    become AAA, which would avoid pepP functioning in the original site.
                                 </p>
                             </div>
                             <div class="col-12 col-md-4 img-style flex-column">
@@ -236,38 +239,45 @@
                             <div class="col-12">
                                 <h5 class="h5 py-2">Visualization</h5>
                                 <div>
-                                    <div class="img-style">
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/7/7c/T--NYMU-Taipei--modeling_visualization_fig1.png">
+                                        <p class="px-5"><strong>Figure 1</strong> : A time record of incidence of
+                                            mutations for site 614 on SARS-CoV-2
+                                            Spike Protein Sequence</p>
                                     </div>
                                     <p class="indent">
-                                        Figure 1: from the graph we can see that the occurrence of D614G has greatly
+                                        From the graph(figure 1) we can see that the occurrence of D614G has greatly
                                         increased since March which is in line with global trends. Most of Taiwan’s
-                                        Covid-19
-                                        cases are from people coming back from foreign countries so the trend of
-                                        following
-                                        global patterns is expected.
+                                        Covid-19 cases are from people coming back from foreign countries so the trend
+                                        of following global patterns is expected.
                                     </p>
                                 </div>
                                 <div>
-                                    <div class="img-style">
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/e/ee/T--NYMU-Taipei--modeling_visualization_fig2.png">
+                                        <p class="px-5"><strong>Figure 2</strong> : A time record of incidence of
+                                            mutations for site 791 on SARS-CoV-2 Spike Protein Sequence
+                                        </p>
                                     </div>
                                     <p class="indent">
-                                        Figure 2: Contrary to global trends, the mutation of site T791I does not seem as
-                                        prevalent compared to the mutation of D614G. For Taiwan, it seems that T791I
-                                        mutation did show up briefly but then quickly disappeared and has not shown up
-                                        again ever since.
+                                        The mutation of site T791I(figure 2) does not seem as prevalent compared to the
+                                        mutation of D614G. For Taiwan, it seems that T791I mutation did show up briefly
+                                        but then quickly disappeared and has not shown up again ever since.
                                     </p>
                                 </div>
                                 <div>
-                                    <div class="img-style">
+
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/b/b2/T--NYMU-Taipei--modeling_visualization_fig3.png">
+                                        <p class="px-5"><strong>Figure 3</strong> : A location record of incidence of
+                                            mutations for site 614 on SARS-CoV-2 Spike Protein Sequence before and after
+                                            March 1st.</p>
                                     </div>
                                     <p class="indent">
-                                        Figure 3: From the graph we can see that before March all the amino acids on
+                                        From the graph(figure 3) we can see that before March all the amino acids on
                                         site 614 was D but after March the northern region of Taiwan shows the most
                                         impact from D614G. Why this would happen we speculate that a lot of the
                                         population lives in the northern region and hence the place with more cases
@@ -275,21 +285,23 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <div class="img-style">
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/7/7b/T--NYMU-Taipei--modeling_visualization_fig4.png">
+                                        <p class="px-5"><strong>Figure 4</strong> : A location record of incidence of
+                                            mutations for site 791 on SARS-CoV-2 Spike Protein Sequence before and after
+                                            March 1st.</p>
                                     </div>
                                     <p class="indent">
-                                        Figure 4: From the graph we can see something different compared to global
-                                        trends. The T791I mutation was known for being a co-mutation with D614G but in
+                                        The T791I mutation is sometimes seen as being a co-mutation with D614G but in
                                         the case of Taiwan, T791I showed up early in the outbreak but later died down.
-                                        Interestingly, the only location that did show this mutation was Taoyuan county.
-                                        Taoyuan county is the place of Taiwan’s biggest international airport so we
-                                        speculate that the people with this mutation got it from foreign countries and
-                                        then brought it back to Taiwan, but for some reason, maybe due to the mutation
-                                        not bringing any evolutionary advantage to the virus added with the fact that
-                                        not many people had this mutation to begin with, the mutation then quickly died
-                                        down and disappeared.
+                                        Interestingly, the only location that did show this mutation was Taoyuan
+                                        county(figure 4). Taoyuan county is the place of Taiwan’s biggest international
+                                        airport so we speculate that the people with this mutation got it from foreign
+                                        countries and then brought it back to Taiwan, but for some reason, maybe due to
+                                        the mutation not bringing any evolutionary advantage to the virus added with the
+                                        fact that not many people had this mutation to begin with, the mutation then
+                                        quickly died down and disappeared.
                                     </p>
                                 </div>
                             </div>
@@ -308,27 +320,32 @@
                                     through the template it then predicts the new target protein structure.
                                 </p>
                                 <div>
-                                    <div class="img-style">
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/1/13/T--NYMU-Taipei--modeling_structural_visualization_fig1.png">
+                                        <p class="px-5"><strong>Figure 5</strong> : Protein Structural Visualization of
+                                            SARS-CoV-2 Spike Protein. Site 614 is located at the red band in the yellow
+                                            circle.</p>
                                     </div>
                                     <p class="indent">
-                                        Figure 5: From the graph we can see that the site of 614 is around the border of
-                                        S1 and S2 subunit of spike protein. There has been previous reports that this
-                                        mutation is related to the increase of infectivity of the virus. We speculate
-                                        due to it’s important structural placing and of the process of how a virus
-                                        infects a human (the virus has to undergo protease trimming before actually
-                                        entering the cell), it is reasonable for a mutation at this location to cause
-                                        change in the chance of infectivity.
+                                        From the graph(figure 5) we can see that the site of 614 is near the border of
+                                        S1 and S2 subunit of spike protein. We speculate due to it’s important
+                                        structural placing and of the process of how a virus infects a human (the virus
+                                        has to undergo protease trimming before actually entering the cell), it is
+                                        reasonable to think that a mutation at this location may cause change in the
+                                        chance of infectivity.
                                     </p>
                                 </div>
                                 <div>
-                                    <div class="img-style">
+                                    <div class="img-style row">
                                         <img
                                             src="https://2020.igem.org/wiki/images/f/fb/T--NYMU-Taipei--modeling_structural_visualization_fig2.png">
+                                        <p class="px-5"><strong>Figure 6</strong> : Protein Structural Visualization of
+                                            SARS-CoV-2 Spike Protein. Site 791 is located at the red band in the yellow
+                                            circle.</p>
                                     </div>
                                     <p class="indent">
-                                        Figure 6: From the graph we can see that site 791 is nearer to the bottom region
+                                        From the graph(figure 6) we can see that site 791 is nearer to the bottom region
                                         of the spike protein. Combined with our observation that this mutation later on
                                         did not show up in any more Taiwan cases and that the mutation site is nearer to
                                         the bottom region, we speculate that this mutation does not have much impact on
@@ -368,7 +385,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <footer id="footer"></footer>
 
