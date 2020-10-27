@@ -29,7 +29,7 @@ p {
 
 .side-nav-menu .nav-link {
   position: relative;
-  min-width: 200px;
+  min-width: 250px;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ p {
 
 .side-navbar .side-nav-menu li .dot span {
   display: inline-block;
-  width: 145px;
+  width: 190px;
   opacity: 0;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -81,8 +81,8 @@ p {
   background-color: #52b098;
   padding: 10px 20px;
   border-radius: 3px;
-  margin-left: 0px;
-  transform: translateX(-20px);
+  margin-left: 20px;
+  transform: translateX(-10px);
   transition: all 0.3s ease;
 }
 
@@ -138,6 +138,22 @@ p {
   margin-top: -1.5rem;
 }
 
+.gif-container {
+  position: relative;
+}
+
+.gif-container > h5 {
+  width: 70%;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gif-container > img {
+  border: #363636 2px solid;
+}
+
 /* COLLABORATION PAGE ONLY */
 
 .collaboration-diagram {
@@ -148,8 +164,23 @@ p {
   max-height: 100%;
   max-width: 33%;
 }
-
 /* EXPERIMENTS PAGE ONLY */
+
+.protocol {
+  padding: 2rem;
+}
+
+.protocol > ol {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.protocol > ol > li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  line-height: 32px;
+}
 
 .card-heading-style {
   padding: 0px;

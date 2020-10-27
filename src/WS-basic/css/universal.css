@@ -101,6 +101,11 @@ body a {
   font-weight: bold;
 }
 
+.h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* ICONS */
 
 svg {
@@ -115,4 +120,9 @@ svg {
 
 .indent {
   text-indent: 2rem;
+}
+
+.normal-list li {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
 }
