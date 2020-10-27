@@ -142,6 +142,18 @@ p {
   position: relative;
 }
 
+.gif-container > h5 {
+  width: 70%;
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gif-container > img {
+  border: #363636 2px solid;
+}
+
 /* COLLABORATION PAGE ONLY */
 
 .collaboration-diagram {
