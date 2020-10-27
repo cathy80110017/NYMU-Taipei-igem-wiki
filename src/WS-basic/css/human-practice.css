@@ -1,44 +1,44 @@
 .img-bottom-hr {
-    width: 95%;
+  width: 80%;
+  border: 1px solid #363636;
 }
 
 .img-bottom-p {
-    font-weight: bold;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
 }
 
-.quesion-block {
-    background-color: #52b098;
-    color: aliceblue;
-    border-radius: 0 35px 35px 35px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    box-shadow: 0 0 11px rgba(55, 55, 55, 0.356);
+.question-block {
+  background-color: #52b098;
+  color: aliceblue;
+  border-radius: 0 35px 35px 35px;
+  padding: 1.5rem;
+  box-shadow: 0 0 11px rgba(55, 55, 55, 0.356);
 }
 
 .answer-block {
-    background-color: rgb(255, 255, 255);
-    color:black;
-    border-radius: 35px 0 35px 35px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    box-shadow: 0 0 11px rgba(55, 55, 55, 0.356);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 1.5rem;
+  border-radius: 35px 0 35px 35px;
+  box-shadow: 0 0 11px rgba(55, 55, 55, 0.356);
 }
 
 .block-punctuation {
-    font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .epilogue-block {
-    border: 5px solid;
-    background-color: white;
+  margin-bottom: 2rem;
+  border: 5px solid;
+  background-color: white;
 }
 .epilogue-block h5 {
-    font-style: italic;
+  font-style: italic;
 }
 .epilogue-block hr {
-    width: 18%;
-    background-color: rgb(104, 104, 104);
-    height: 4px;
+  color: #363636;
 }
