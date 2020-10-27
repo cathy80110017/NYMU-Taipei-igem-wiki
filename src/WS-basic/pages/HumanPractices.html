@@ -14,10 +14,11 @@
     <link rel=stylesheet type="text/css" href="../css/human-practice.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
 
     <div id="navbar"></div>
 
+    <!-- CAROUSEL SECTION -->
     <div id="team-photos" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#team-photos" data-slide-to="0" class="active"></li>
@@ -26,12 +27,11 @@
             <li data-target="#team-photos" data-slide-to="3"></li>
         </ol>
 
-
         <div class="carousel-title text-white">
-            <h1>Human Practices</h1>
+            <h2>Human Practices</h2>
         </div>
 
-        <div class="carousel-inner w-100 h-100">
+        <div class="carousel-inner w-100">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="/src/assets/img/Human_Practices/hp_display_1.jpg" alt="First slide">
                 <div class="dark-overlay"></div>
@@ -72,18 +72,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="dot nav-link" href="#Field">
+                                <span>Field Survey</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="dot nav-link" href="#Expert">
                                 <span>Expert Visits</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="dot nav-link" href="#Integrated">
-                                <span>Integrated Human Practice</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dot nav-link" href="#Inactivating">
-                                <span>Inactivating</span>
+                                <span>Integrated HP</span>
                             </a>
                         </li>
                     </ul>
@@ -93,10 +93,10 @@
 
             <div class="col-md-9">
                 <section id="Overview">
-                    <h4 class="pt-2 pb-3">
-                        Overview
-                    </h4>
-
+                    <div class="pb-5">
+                        <h3>Overview</h3>
+                        <hr class="heading-underline">
+                    </div>
                     <div class="pb-4">
                         <div class="row">
                             <div class="col-12">
@@ -116,19 +116,23 @@
                         </div>
                     </div>
                 </section>
-                <section id="Feild">
+                <section id="Field">
                     <div class="py-5">
-                        <h3>Feild Survey</h3>
+                        <h3>Field Survey</h3>
                         <hr class="heading-underline">
                     </div>
                     <div class="pb-4">
                         <div class="row">
                             <div class="col-12 img-style flex-column">
-                                <img src="/src/assets/img/Human_Practices/hp_field_person.jpg" class="img-fluid mt--2">
+
+                                <img src="/src/assets/img/Human_Practices/hp_field_person.jpg" class="img-fluid mx-auto"
+                                    style="max-width: 700px;">
+
                                 <hr class="img-bottom-hr">
+
                                 <p class="img-bottom-p">Ready to conduct our field survey</p>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 pt-2">
                                 <p class="indent">
                                     To our team, people’s ideas and opinions can show us what is most needed amidst this
                                     pandemic. At the very start of our project, our team decided on a set of questions
@@ -141,15 +145,17 @@
                                     goggles.
                                 </p>
                             </div>
-                            <div class="col-12 img-style flex-column pt-3">
-                                <img src="/src/assets/img/Human_Practices/hp_field_chart.png" class="img-fluid mt--2">
+                            <div
+                                class="d-flex col-12 img-style flex-column pt-3 align-items-center justify-content-center">
+
+                                <img src="/src/assets/img/Human_Practices/hp_field_chart.png" class="img-fluid">
                                 <hr class="img-bottom-hr">
-                                <p class="img-bottom-p">results from Survey Respondents</p>
+                                <p class="img-bottom-p">Results From Survey Respondents</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="Feild">
+                <section id="Expert">
                     <div class="py-5">
                         <h3>Expert Visits</h3>
                         <hr class="heading-underline">
@@ -160,7 +166,8 @@
                         </div>
                     </div>
                 </section>
-                <section id="Feild">
+
+                <section id="Integrated">
                     <div class="py-5">
                         <h3>Integrated Human Practices</h3>
                         <hr class="heading-underline">
@@ -198,57 +205,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-3">
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with Dr. Chan, what did our team learn?</p>
-                                    </div>
-                                </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>After talking with Dr. Chan the aspect of indirect infection through PPE
-                                            became
-                                            our main inspiration of a research topic.</p>
-                                    </div>
+                        <div class="row d-flex justify-content-between py-5">
+                            <div class="col-md-5">
+                                <div class="question-block">
+                                    <span class="block-punctuation">Q:</span>
+                                    <p>
+                                        In the discussion with Dr. Chan, what did our team learn?
+                                    </p>
                                 </div>
                             </div>
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>What did our team learn from the field survey?</p>
-                                    </div>
+                            <div class="col-md-7">
+                                <div class="answer-block">
+                                    <span class="block-punctuation">A:</span>
+                                    <p>
+                                        After talking with Dr. Chan the aspect of indirect infection through PPE became
+                                        our main inspiration of a research topic.
+                                    </p>
                                 </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>The results of our survey indicate that the masses are most concerned about
-                                            finding the right drug treatment for COVID-19, next on the list is alcohol,
-                                            face
-                                            masks, and then research on rapid test kits. We then incorporated and
-                                            considered
-                                            ideas from the concerns of the people, for this, we thank them for providing
-                                            ideas to our team.</p>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between py-5">
+                            <div class="col-md-5">
+                                <div class="question-block">
+                                    <span class="block-punctuation">Q:</span>
+                                    <p>
+                                        What did our team learn from the field survey?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="answer-block">
+                                    <span class="block-punctuation">A:</span>
+                                    <p>
+                                        The results of our survey indicate that the masses are most concerned about
+                                        finding the right drug treatment for COVID-19, next on the list is alcohol, face
+                                        masks, and then research on rapid test kits. We then incorporated and considered
+                                        ideas from the concerns of the people, for this, we thank them for providing
+                                        ideas to our team.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -257,8 +251,9 @@
                                 <h5>Epilogue</h5>
                                 <hr>
                             </div>
-                            <div class="col-12 text-center">
-                                <p class="indent py-3 px-5">Through our discussions with Doctor Chan and the people from
+                            <div class="text-center">
+                                <p class="indent py-2 px-5">
+                                    Through our discussions with Doctor Chan and the people from
                                     the
                                     survey, our team decided on a final idea of using our product on protective
                                     equipment. Also, through our discussions with people from the survey, we learned
@@ -270,6 +265,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="py-3">
                         <h4 class="pt-2 pb-3">
                             Improvement of Product
@@ -287,178 +283,164 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-3">
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with prof. Kung, what did our team learn?</p>
-                                    </div>
-                                </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>Prof. Kung gave advice in the area of the linker for FRET. He suggested that
-                                            we use a linker with a smaller molecular weight than originally designed, he
-                                            also discussed with us how the length of the linker would affect the
-                                            experiment. It is because of prof. Kung’s advice that our team was able to
-                                            have more variety in the design and selection of the linker.</p>
-                                    </div>
+                        <div class="row d-flex justify-content-between py-5">
+                            <div class="col-md-5">
+                                <div class="question-block">
+                                    <span class="block-punctuation">Q:</span>
+                                    <p>
+                                        In the discussion with prof. Kung, what did our team learn?
+                                    </p>
                                 </div>
                             </div>
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with prof. Liu, what did our team learn?</p>
-                                    </div>
-                                </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>The discussion with prof. Liu really made a big impact on our design. Through
-                                            understanding our problem from a chemical engineering perspective, we were
-                                            able to break out of our original design and combine knowledge from
-                                            different backgrounds to make the contact lens material we needed.
-                                        </p>
-                                    </div>
+                            <div class="col-md-7">
+                                <div class="answer-block">
+                                    <span class="block-punctuation">A:</span>
+                                    <p>
+                                        Prof. Kung gave advice in the area of the linker for FRET. He suggested that we
+                                        use a linker with a smaller molecular weight than originally designed, he also
+                                        discussed with us how the length of the linker would affect the experiment. It
+                                        is because of prof. Kung’s advice that our team was able to have more variety in
+                                        the design and selection of the linker.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with director Ma, what did our team learn?</p>
-                                    </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-between py-5">
+                            <div class="col-md-5">
+                                <div class="question-block">
+                                    <span class="block-punctuation">Q:</span>
+                                    <p>
+                                        In the discussion with prof. Liu, what did our team learn?
+                                    </p>
                                 </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In our discussion we learned that it is not easy to get a structurally
-                                            accurate ACE2 and spike protein in a normal lab. After exchange of knowledge
-                                            and explanations of experiments, CEO Ma was willing to help out in our
-                                            team’s experiments.
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="answer-block">
+                                    <span class="block-punctuation">A:</span>
+                                    <p>
+                                        The discussion with prof. Liu really made a big impact on our design. Through
+                                        understanding our problem from a chemical engineering perspective, we were able
+                                        to break out of our original design and combine knowledge from different
+                                        backgrounds to make the contact lens material we needed.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-between py-5">
+                            <div class="col-md-5">
+                                <div class="question-block">
+                                    <span class="block-punctuation">Q:</span>
+                                    <p>
+                                        In the discussion with director Ma, what did our team learn?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="answer-block">
+                                    <span class="block-punctuation">A:</span>
+                                    <p>
+                                        In our discussion we learned that it is not easy to get a structurally accurate
+                                        ACE2 and spike protein in a normal lab. After exchange of knowledge and
+                                        explanations of experiments, CEO Ma was willing to help out in our team’s
+                                        experiments.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="py-3">
                         <h4 class="pt-2 pb-3">
-                            Future Prospects
+                            Future Prospect
                         </h4>
                         <div class="pb-4">
                             <div class="row">
                                 <div class="col-12">
                                     <p class="indent">
                                         The main purpose of company visits is to understand how a complete product
-                                        should look like and make sure there is a need in the market for the product. In
-                                        the communication and interactions with the companies, we learned about how
-                                        their products were made which also gave us inspiration in our own product
-                                        designs. On the other hand, the companies were also able to gain a different
-                                        type of inspiration from us, for example: feedback on issues related with
-                                        company responsibility to the public, strong passion for research… etc. The
-                                        following content is about the two companies we had the honor to visit.
+                                        should look like and make sure there is a need in the market for the
+                                        product. In the communication and interactions with the companies, we
+                                        learned about how their products were made which also gave us inspiration in
+                                        our own product designs. On the other hand, the companies were also able to
+                                        gain a different type of inspiration from us, for example: feedback on
+                                        issues related with company responsibility to the public, strong passion for
+                                        research… etc. The following content is about the two companies we had the
+                                        honor to visit.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-3">
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with Motex, what did our team learn?</p>
+                            <div class="row d-flex justify-content-between py-5">
+                                <div class="col-md-5">
+                                    <div class="question-block">
+                                        <span class="block-punctuation">Q:</span>
+                                        <p>
+                                            In the discussion with Motex, what did our team learn?
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In our interview with the company we learned that there were previous
+                                <div class="col-md-7">
+                                    <div class="answer-block">
+                                        <span class="block-punctuation">A:</span>
+                                        <p>
+                                            In our interview with the company we learned that there were previous
                                             examples of adding material on face masks so even though our team may face
                                             some technical difficulties, the company still encouraged us to research on.
-                                            They were also willing to give us face masks as support of our research.</p>
+                                            They were also willing to give us face masks as support of our research.
+                                        </p>
                                     </div>
+
                                 </div>
                             </div>
-                            <div class="row px-3 py-4 d-flex align-self-center justify-content-around">
-                                <div class="row col-12 col-md-5 quesion-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">Q:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>In the discussion with Pegavision, what did our team learn?</p>
+                            <div class="row d-flex justify-content-between py-5">
+                                <div class="col-md-5">
+                                    <div class="question-block">
+                                        <span class="block-punctuation">Q:</span>
+                                        <p>
+                                            In the discussion with Pegavision, what did our team learn?
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="row col-12 col-md-5 answer-block">
-                                    <div
-                                        class="col-2 col-md-3 col-lg-2 px-0 py-3 d-flex align-self-center justify-content-center">
-                                        <p class="block-punctuation">A:</p>
-                                    </div>
-                                    <div
-                                        class="col-10 col-md-9 px-0 py-3 col-lg-10 d-flex align-self-center justify-content-center">
-                                        <p>Not only were we able to discuss about product related technology and market
+                                <div class="col-md-7">
+                                    <div class="answer-block">
+                                        <span class="block-punctuation">A:</span>
+                                        <p>
+                                            Not only were we able to discuss about product related technology and market
                                             situations, we were also able to talk about the hardships of consumer and
                                             business responsibility when products are out in the market. This gave us
                                             more insight on why the transition of products from in the lab to the real
                                             world isn’t something easy. In the end the company gave us a lot of
                                             encouragement and was willing to help us further with things related with
-                                            contact lens.</p>
+                                            contact lens.
+                                        </p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="epilogue-block">
-                            <div class="col-12 text-center pt-3">
-                                <h5>Epilogue</h5>
-                                <hr>
-                            </div>
-                            <div class="col-12 text-center">
-                                <p class="indent py-3 px-5">Through our discussion with both companies, our team learned
-                                    that it’s not easy for a product to go from production to the market. The research
-                                    behind each product should be complete, which is what our team is doing so far. To
-                                    conclude, both companies think our research product has potential.</p>
-                            </div>
+                    </div>
+
+
+
+
+                    <div class="epilogue-block">
+                        <div class="col-12 text-center pt-3">
+                            <h5>Epilogue</h5>
+                            <hr>
+                        </div>
+                        <div class="col-12 text-center">
+                            <p class="indent py-3 px-5">Through our discussion with both companies, our team learned
+                                that it’s not easy for a product to go from production to the market. The research
+                                behind each product should be complete, which is what our team is doing so far. To
+                                conclude, both companies think our research product has potential.</p>
+
                         </div>
                     </div>
-                </section>
             </div>
+            </section>
         </div>
+    </div>
     </div>
 
     <footer id="footer"></footer>
