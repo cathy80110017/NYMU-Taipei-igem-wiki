@@ -90,9 +90,14 @@
     margin: 1.25rem;
     height: 500px;
     box-shadow: 0 0 11px rgba(129, 129, 129, 0.25);
-
+    transition: box-shadow .2s;
 }
 
+.box:hover {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 0 11px rgba(10, 10, 10, 0.542);
+}
 
 .upper-box {
     display: flex;
