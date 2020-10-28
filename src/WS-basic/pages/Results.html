@@ -1,32 +1,96 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <div class="py-5">
+                        <h3 class="h3">Results</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <h4 class="h4 pt-2 pb-3">
+                        ACE2-Spike Binding Affinity
+                    </h4>
+
+                    <div class="pb-4">
+                        <div class="row">
+                            <h5 class="h5 py-3 col-12">Plasmid construction</h5>
+                            <div class="col-12">
+                                <span><strong>ACE2</strong></span>
+                                <p class="indent">
+                                    We successfully constructed a plasmid that has ACE2 RBD coding sequence with a
+                                    bacterial expression backbone and 6x histag.
+                                </p>
+                                <div class="row">
+                                    <img src="/src/assets/img/Result/result_ACE2_schematic.png"
+                                        class="img-fluid pb-4 col-12 col-md-6">
+                                    <img src="/src/assets/img/Result/result_ACE2.png"
+                                        class="img-fluid py-4 col-12 col-md-6">
+                                    <p class="col-12 text-center"><strong>plasmid overview on snapgene(3953bp)
+                                            gel electrophoresis digested by BamHI(1061) and EcoRI(1791)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="h4 pt-2 pb-3">
+                        Protease Cleaving Activity
+                    </h4>
+
+                    <div class="pb-4">
+                        <div class="row">
+                            <h5 class="h5 py-3 col-12">Plasmid construction</h5>
+                            <div class="col-12">
+                                <span><strong>ACE2</strong></span>
+                                <p class="indent">
+                                    We successfully constructed a plasmid that has pepP coding sequence with a bacterial
+                                    expression backbone and 6x histag
+                                </p>
+                                <div class="row">
+                                    <img src="/src/assets/img/Result/result_pepP_schematic.png"
+                                        class="img-fluid pb-4 col-12 col-md-6">
+                                    <img src="/src/assets/img/Result/result_pepP.png"
+                                        class="img-fluid py-4 col-12 col-md-6">
+                                    <p class="col-12 text-center"><strong>plasmid overview on snapgene(3056bp)
+                                            gel electrophoresis digested by XbaI(70) and HindIII(1590)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
             // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
