@@ -131,6 +131,10 @@ svg {
   font-weight: bold;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .indent {
   text-indent: 2rem;
 }
