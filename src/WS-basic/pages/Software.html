@@ -1,32 +1,152 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>iGem</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/sidenav.js"></script>
-    
-        <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
-        <link rel=stylesheet type="text/css" href="../css/universal.css">
-        <link rel=stylesheet type="text/css" href="../css/template.css">
-    </head>
-    <body>
 
-        <div id="navbar"></div>
+<head>
+    <meta charset="utf-8">
+    <title>iGem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/sidenav.js"></script>
 
-        <div class="container-xl main-container">
-            
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.css">
+    <link rel=stylesheet type="text/css" href="../css/universal.css">
+    <link rel=stylesheet type="text/css" href="../css/template.css">
+    <link rel=stylesheet type="text/css" href="../css/human-practice.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
+
+    <div id="navbar"></div>
+
+    <div class="container-xl main-container">
+        <div class="row">
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Overview">
+                                <span>Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Crawler">
+                                <span>Web Crawler</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Matcher">
+                                <span>Sequence Matching</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- END SIDE NAV -->
+
+            <div class="col-md-9">
+                <section id="Overview" class="pb-5">
+                    <div class="py-5">
+                        <h3 class="h3">Software</h3>
+                        <hr class="heading-underline">
+                    </div>
+
+                    <h4 class="h4 pt-2 pb-3">
+                        Overview
+                    </h4>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="indent">
+                                In order to find the reasonable protease to cleave the SARS-CoV-2 spike protein,
+                                while remmaining unharmful to the hACE2 protein. We developed a program that
+                                combines the strengths of web scraping and regex sequence matching in order to
+                                derive a satisfying choice for our wet lab experiments. Though, our wet lab results
+                                are not 100% definite, we are sure that this software can be helpful to anyone who
+                                is trying to find adept proteases for certain experiments.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="Crawler" class="pb-5">
+                    <h4 class="h4 py-3">
+                        Web Crawler
+                    </h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="indent">
+                                By making the most out of easy to implement python packages, we are able to
+                                implement a python program that crawls data from the MEROPS website, which is the
+                                main protease databank worldwide right now. MEROPS collects findings from different
+                                researches and organizes them into a structured form, where all the cleavage sites
+                                of a protease that were proved to happen were listed down. Therefore, we crawled and
+                                parsed the data to store them all in a .csv file where we only store the information
+                                we need, which includes the MEROPs ID of the protease, the name of the protease, and
+                                the 8 amino acid cut site sequences of that particular protease. We store the data
+                                for later sequence matching which will be introduced in the next section.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+
+                <section id="Matcher" class="pb-5">
+                    <h4 class="h4 py-3">
+                        Sequence Matcher
+                    </h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="indent">
+                                Here, in view of speeding up the process of sequence matching where speed is of much
+                                importance. We decided to develop the program using C++. Our program starts by
+                                requiring the user to pass in two .fasta sequences as arguments, and then it
+                                searches through the merops database that is crawled from the internet in the
+                                previous section. At last, it outputs all the protease that cut and their cut sites
+                                on the two proteins respectively. On the other hand, it also stores the proteases
+                                that cut only one of the two sequences which is what most users are looking for just
+                                like in our case. Therefore, by implementing it this way, our program becomes more
+                                versatile and portable. It can deal with different sequences using different
+                                protease databases(they need to be stored in the same format however), making it a
+                                ever more powerful tool for future iGEM teams or anybody who is interested in
+                                protein structure-related investigations.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="github" class="py-5">
+                    <h4 class="h4 text-center pb-5">Check Out our Software on Github !</h4>
+                    <div class="d-flex flex-column justify-content-between align-items-center">
+
+                        <a type="button" class="btn btn-outline-success p-4 m-2"
+                            href="https://github.com/YHTerrance/Merops-Crawler" target="_blank">
+                            Merops Crawler
+                        </a>
+
+                    </div>
+                </section>
+
+            </div>
         </div>
+    </div>
 
-        <footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-        <script>
-            $(function () {
-                $("#navbar").load("../components/navbar.html");
-                $("#footer").load("../components/footer.html");
-            })
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        })
             // $('body').scrollspy({ target: '.navbar-example' })
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
