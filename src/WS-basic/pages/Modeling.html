@@ -34,16 +34,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="dot nav-link" href="#Method">
-                                <span>Method</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dot nav-link" href="#Docking">
-                                <span>Docking</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="dot nav-link" href="#Monitoring">
                                 <span>Monitoring Spike Protein</span>
                             </a>
@@ -82,93 +72,59 @@
                     <h4 class="h4 py-3">
                         Structural Modeling
                     </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-12 col-md-9">
-                                <p class="indent">
-                                </p>
-                            </div>
-                        </div>
+                    <h5 class="h5 py-2">Method</h5>
+                    <p class="indent">
+                        We use SeeSar for docking all the ligands that are available during editing, clashes
+                        can also be visualized to better guide the editing process. During docking, it is
+                        often times necessary to be a little more forgiving about clashes as poses are
+                        generated on a coarse-grain grid of torsion angles only. For this reason, we added
+                        clash tolerance as an adjustable parameter in Docking mode besides affinity, which
+                        can also be shown on the table.
+                    </p>
+                    <h6 class="h6 py-2">SeeSar 10 protocol</h6>
+
+                    <ol class="normal-list">
+                        <li>load protein and define pockets</li>
+                        <li>select pocket and load ligand</li>
+                        <li>docking and calculate the affinity</li>
+                    </ol>
+
+                    <h5 class="h5 py-2">Docking</h5>
+                    <h6 class="h6 py-1">Spike and pepP affinity</h6>
+                    <p class="indent">
+                        There are lots of pockets on a spike protein.(figure 1) After filtering the sequence, we select
+                        the pocket with the sequence Pro-Phe in order(in the reference, it said that pepP would cut the
+                        sequence Pro-Phe into two pieces), and find the site which is on outer space. We then load pepP
+                        as ligand. As for docking analysis, we found that there are several poses which shows high
+                        affinity without clashes.
+                        From this outcome, we could conclude that our protease(pepP) construct is highly possible to
+                        bind on the spike protein and destroy it as expected.
+                    </p>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="https://2020.igem.org/wiki/images/f/f2/T--NYMU-Taipei--modeling_ace2_pepP_affinity.png"
+                            alt="" class="img-fluid py-4">
+
+                        <img src="https://2020.igem.org/wiki/images/b/bf/T--NYMU-Taipei--modeling_ace2_pepP_analysis.png"
+                            alt="" class="img-fluid py-4">
+
                     </div>
-                </section>
-                <hr>
-                <section id="Method">
-                    <h4 class="h4 py-3">
-                        Method
-                    </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="indent">
-                                    We use SeeSar for docking all the ligands that are available during editing, clashes
-                                    can also be visualized to better guide the editing process. During docking, it is
-                                    often times necessary to be a little more forgiving about clashes as poses are
-                                    generated on a coarse-grain grid of torsion angles only. For this reason, we added
-                                    clash tolerance as an adjustable parameter in Docking mode besides affinity, which
-                                    can also be shown on the table.
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <h5 class="h5 py-2">seesar 10 protocol</h5>
-                                <p class="indent">
-                                <ol>
-                                    <li>load protein and define pockets</li>
-                                    <li>select pocket and load ligand</li>
-                                    <li>docking and calculate the affinity</li>
-                                </ol>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <hr>
-                <section id="Docking">
-                    <h4 class=" h4 py-3">
-                        Docking
-                    </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-12 col-md-8">
-                                <h5 class="h5 py-2">spike and pepP affinity</h5>
-                                <p class="indent">
-                                    There are lots of pockets on a spike protein.(figure 1) After filtering the
-                                    sequence, we select the pocket with the sequence Pro-Phe in order(in the reference,
-                                    it said that pepP would cut the sequence Pro-Phe into two pieces), and find the site
-                                    which is on outer space. We then load pepP as ligand. As for docking analysis, we
-                                    found that there are several poses which shows high affinity without clashes.
-                                </p>
-                                <p class="indent">
-                                    From the outcome, we could conclude our protease(pepP) is highly
-                                    possible to binding
-                                    on the spike protein and destroy it as expected.
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-4 img-style">
-                                <img src="https://2020.igem.org/wiki/images/6/6c/T--NYMU-Taipei--modeling_spike_and_pepP.jpg"
-                                    class="img-fluid mt--1-5">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-12 col-md-8">
-                                <h5 class="h5 py-2">ACE2 and pepP affinity</h5>
-                                <p class="indent">
-                                    Though there are 10 pockets on the ACE2 RBD, there is only one pocket(figure 1) that
-                                    contains Pro-Phe ordered sequence. Fortunately, that pocket is the only pocket
-                                    located in the core instead of on the outer side. We then use the pocket to dock the
-                                    spike affinity(figure 2). Results show that there is still a chance for ACE2 RBD to
-                                    bind with spike. To prevent this risk, we make a point mutation to make the YAA
-                                    become AAA, which would avoid pepP functioning in the original site.
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-4 img-style flex-column">
-                                <img src="https://2020.igem.org/wiki/images/5/5c/T--NYMU-Taipei--modeling_ACE2_and_pepP_fig2.png.jpg"
-                                    class="img-fluid mt--1-5">
-                                <img src="https://2020.igem.org/wiki/images/2/21/T--NYMU-Taipei--modeling_ACE2_and_pepP_fig1.png"
-                                    class="img-fluid mt--1-5">
-                            </div>
-                        </div>
+
+                    <h6 class="h6 py-1">Ace2 and pepP affinity</h6>
+                    <p class="indent">
+                        Though there are 10 pockets on the ACE2 RBD, there is only one pocket(figure 1) that contains
+                        Pro-Phe ordered sequence. Fortunately, that pocket is the only pocket located in the core
+                        instead of on the outer side. We then use the pocket to dock the spike affinity(figure 2).
+                        Results show that there is still a chance for ACE2 RBD to bind with spike. To prevent this risk,
+                        we make a point mutation to make the YAA become AAA, which would avoid pepP functioning in the
+                        original site.
+                    </p>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="https://2020.igem.org/wiki/images/f/f2/T--NYMU-Taipei--modeling_ace2_pepP_affinity.png"
+                            alt="" class="img-fluid py-4">
+
+                        <img src="https://2020.igem.org/wiki/images/b/bf/T--NYMU-Taipei--modeling_ace2_pepP_analysis.png"
+                            alt="" class="img-fluid py-4">
+
                     </div>
                 </section>
                 <hr>

@@ -38,6 +38,11 @@
                                 <span>Composite Parts</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Improvement">
+                                <span>Improvement</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -56,7 +61,9 @@
                         <div class="row">
                             <div class="py-3 col-12">
                                 <p class="indent">
-                                    This year, our parts can be divided into categories of three.
+                                    This year, our parts can be divided into categories of three, including plasmids for
+                                    basic constructs, plasmids for constructs of detection assay and also plasmids for
+                                    constructs of spike cleavage design.
                                 </p>
                             </div>
                         </div>
@@ -66,9 +73,9 @@
                             <div class="py-3 col-12">
                                 <h5 class="h5 py-2">Plasmids for basic constructs</h5>
                                 <p class="indent">
-                                    This category includes the plasmids of original proteins or protein fragments,
-                                    ranging from 1RBD of hACE2, 2spike protein monomer, 3protease(for spike protein
-                                    cleavage), and 4red fluorescent protein
+                                    This category includes the parts of original proteins or protein fragments, ranging
+                                    from RBD of hACE2, pepP protease(for spike protein cleavage), and the bacterial
+                                    expression vector we use to express the proteins
                                 </p>
                             </div>
                         </div>
@@ -79,8 +86,8 @@
                                 <h5 class="h5 py-2">Plasmids for constructs of detection assay</h5>
                                 <p class="indent">
                                     This category includes the modified plasmids which are finally translated into
-                                    protein complex that is used in our spike detection FRET assay. These include
-                                    1mVenus-RBD of hACE2, 2mScarlet-I-Spike protein monomer
+                                    protein complex that is used in spike protein detection assay, e.x. red fluorescent
+                                    protein
                                 </p>
                             </div>
                         </div>
@@ -91,15 +98,18 @@
                                 <h5 class="h5 py-2">Plasmids for constructs of spike cleavage design</h5>
                                 <p class="indent">
                                     This category includes the plasmid for the spike protein cleavage design, which will
-                                    finally be translated into the construct of “Protease-RBD of hACE2”
+                                    finally be translated into the construct of “Protease-RBD of hACE2” and spike
+                                    fragments(No.1-4)
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
                 <hr>
+
+                <!-- BASIC PARTS -->
                 <section id="Basic">
-                    <h4 class="h4 pt-2 pb-3">
+                    <h4 class="h4 py-3">
                         Basic Parts
                     </h4>
                     <div class="pb-5">
@@ -198,8 +208,11 @@
                         </table>
                     </div>
                 </section>
+
+                <hr>
+                <!-- COMPOSITE PARTS -->
                 <section id="Composite">
-                    <h4 class="h4 pt-2 pb-3">
+                    <h4 class="h4 py-3">
                         Composite Parts
                     </h4>
                     <div class="pb-5">
@@ -300,6 +313,50 @@
                             </tbody>
                         </table>
                     </div>
+                </section>
+                <hr>
+
+                <!-- IMPROVEMENT -->
+                <section id="Improvement">
+                    <h4 class="h4 py-3">
+                        Improvement of an Existing Part
+                    </h4>
+                    <p class="indent mb-0">
+                        We improved “Red Fluorescent protein” (BBa_K2040119) to “His Tag inserted Red Fluorescent
+                        protein” (BBa_J23100) . We introduced the modification of improving purification efficiency by
+                        adding 6x-His tag to C-terminus.
+
+                        In our experiment, we made a construct which contains Red Fluorescent Protein with his tag on C
+                        terminal. we do this to test our gel covered with Cu2+ that can capture his tag. With rfp, we
+                        can immediately check whether it binds on the gel with naked eye. Since there is no available
+                        part before, we hope this new part we made can bring convience to the teams in the future.
+
+                        We chose to improve BBa_K2040119 because we have the rfp construct from previous team. We can
+                        use the sequence as fragment without buying the rfp sequence.We were dedicating to observing
+                        binding affinity with his tag within a short amount of time; as a rusult, the appearance of
+                        visibly red fluorescence protein is important.
+                        We added 6x-His tag to the C-terminus of an existing part. In this way, rfp is available to
+                        protein purify simply by using Ni-NTA beads. With our new part, in the future, if there is team
+                        want to visualize protien construct binding affinity, they can use our part doing so.
+                    </p>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6 align-self-start">
+                            <p class="indent">
+                                To test whether we have successfully made the part, we firstly run the gel see the kda
+                                of
+                                plasmid is on the right site. Next, we tansform the plasmid into DH5a and culture in
+                                BL21 to mass produce our target protein. Finally, we purified this product by Ni column.
+                                And then run the SDS page(Fig.2) Shown in the Fig.1 below, we succeeded in purifying RFP
+                                with his tag by using Ni column.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="
+                            https://2020.igem.org/wiki/images/0/06/T--NYMU-Taipei--parts_improvement.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+
                 </section>
             </div>
         </div>

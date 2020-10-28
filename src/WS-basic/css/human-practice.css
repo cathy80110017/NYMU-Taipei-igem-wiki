@@ -56,8 +56,6 @@
   padding: 2rem;
 }
 
-#videos a {
-  padding: 2rem;
-  border-radius: 50px;
-  border: 1px solid #85b098;
+#videos button {
+  border-radius: 30px;
 }

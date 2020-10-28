@@ -13,136 +13,152 @@
     <link rel=stylesheet type="text/css" href="../css/template.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="300">
 
     <div id="navbar"></div>
 
     <div class="container-xl main-container">
         <div class="row">
-            <div class="col-md">
-                <section class="pb-4">
+
+            <!-- START SIDE NAV -->
+            <div class="col-md-3">
+                <nav id="myScrollspy" class="d-none d-md-block side-navbar">
+                    <ul class="nav side-nav-menu flex-column">
+                        <li class="nav-item">
+                            <a class="dot nav-link active" href="#Phase1">
+                                <span>Phase 1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Phase2">
+                                <span>Phase 2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dot nav-link" href="#Phase3">
+                                <span>Phase 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDE NAV -->
+
+            <div class="col-md-9">
+                <section id="Phase1" class="pb-4">
                     <div class="py-5">
                         <h3 class="h3">Engineering</h3>
                         <hr class="heading-underline">
                     </div>
-
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="indent">
-                                    The very start goal of our project is to eliminate the suspending COVID-19 virus
-                                    particles in the air. Through synthetic biology, we could achieve specific capture
-                                    and inactivation. This could be helpful in highly dangerous or intricate working
-                                    place, such as the custom or IC chip factory, since the air flow needs extra
-                                    protection.
-                                </p>
-                            </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="indent">
+                                The very start goal of our project is to eliminate the suspending COVID-19 virus
+                                particles in the air. Through synthetic biology, we could achieve specific capture
+                                and inactivation. This could be helpful in highly dangerous or intricate working
+                                place, such as the custom or IC chip factory, since the air flow needs extra
+                                protection.
+                            </p>
                         </div>
                     </div>
                 </section>
                 <hr>
                 <section class="pb-4">
                     <h4 class="h4 pt-2 pb-3">
-                        Phase one design(March to July)
+                        Phase One Design (March to July)
                     </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="py-3 col-12">
-                                <p class="indent">
-                                    Through researching previous experiments, we found out that huamn receptor hACE2.
-                                    This could be used to capture the flowting virus in the air to fulfill our need.
-                                    Next, in order to inactivate the virus, we cameup with an idea to malfunction the
-                                    virus with a protease. According to documentation, COVID-19 virus enter human cell
-                                    through the binding between spike protein and human receptor hACE2. After that, a
-                                    human membrane protein called the TMPRSS2 will cut spike protein on S1/S2 domain,
-                                    enable the virus to enter human cell through membrane funsion.
-                                </p>
-                                <p class="indent">
-                                    Thus, our phase one design is to construct a fusion protein, which is consist of
-                                    hACE2, a linker and a selected protease. The protease is choosing according to
-                                    peptidase database “MEROPS”. We wish to find something only reacts with spike
-                                    protein rather than hACE2. The protease we choose was aminopeptidase N(pepN), which
-                                    is a E. coli strain K12 MG1655 protein.
-                                </p>
-                                <p class="indent">
-                                    As for how to detect the binding of spike protein and hACE2, we planned to apply a
-                                    FRET design between the two proteins. In our design, we choosed to put both
-                                    fluorescent proteins at the N terminal of spike and ACE2. Therefore, when the spike
-                                    protein and hACE2 bind to each other, the acceptor of FRET pair will emit light due
-                                    to the decrease of distance between the FRET pair.
-                                </p>
-                            </div>
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <p class="indent">
+                                Through researching previous experiments, we found out that huamn receptor hACE2.
+                                This could be used to capture the flowting virus in the air to fulfill our need.
+                                Next, in order to inactivate the virus, we cameup with an idea to malfunction the
+                                virus with a protease. According to documentation, COVID-19 virus enter human cell
+                                through the binding between spike protein and human receptor hACE2. After that, a
+                                human membrane protein called the TMPRSS2 will cut spike protein on S1/S2 domain,
+                                enable the virus to enter human cell through membrane funsion.
+                            </p>
+                            <p class="indent">
+                                Thus, our phase one design is to construct a fusion protein, which is consist of
+                                hACE2, a linker and a selected protease. The protease is choosing according to
+                                peptidase database “MEROPS”. We wish to find something only reacts with spike
+                                protein rather than hACE2. The protease we choose was aminopeptidase N(pepN), which
+                                is a E. coli strain K12 MG1655 protein.
+                            </p>
+                            <p class="indent">
+                                As for how to detect the binding of spike protein and hACE2, we planned to apply a
+                                FRET design between the two proteins. In our design, we choosed to put both
+                                fluorescent proteins at the N terminal of spike and ACE2. Therefore, when the spike
+                                protein and hACE2 bind to each other, the acceptor of FRET pair will emit light due
+                                to the decrease of distance between the FRET pair.
+                            </p>
                         </div>
                     </div>
                 </section>
                 <hr>
-                <section class="pb-4">
+                <section id="Phase2" class="pb-4">
                     <h4 class="h4 pt-2 pb-3">
-                        Phase two design(Summer vacation)
+                        Phase Two Design (Summer Vacation)
                     </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="py-3 col-12">
-                                <p class="indent">
-                                    During experiment, we found various problems about our original design. First, the
-                                    fusion protein with Fret(hACE2+linker+protease+fret) is far too big to construct and
-                                    express in E. coli(over 5000 bp). Second, the cloning of pepN wasn’t too easy, since
-                                    the genomic DNA of E. coli horbors more than 4M bp gene sequence. We had quite a
-                                    hard time adjusting the PCR condition. Lastly, there were still cleavage sites on
-                                    hACE2, which could lead to the inactivation of out fusion protein.
-                                </p>
-                                <p class="indent">
-                                    To solve these problems, we later add a his tag on the end of the plasmid to replace
-                                    the usage of Fret protein. The result will be demonstrate through western blotting
-                                    gel. The mass of protein various before and after protease cleavage. We also adjust
-                                    the denaturing time in the three-step cycle of PCR from standard 30 second to 3
-                                    minutes, which is meant to fully open the 4M genomic DNA. Lastly, we choose to use
-                                    hACE2’s RBD(receptor-binding domain) rather than full length in order to eliminate
-                                    possible cleavage site on it.
-                                </p>
-                                <p class="indent">
-                                    What’s noteworthy is that we choose KOD as our PCR enzyme in order to prevent
-                                    mutation cause by DNA polymerization. In comparision t enzyme Taq, KOD has a better
-                                    proofreading accuracy and thermostability. This could provide a better quality for
-                                    our engineering product. Moreover, Gidson assemble was used in order to combine
-                                    multiple DNA fragments simultaneously, enhancing the efficiency of our experiment.
-                                </p>
-                            </div>
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <p class="indent">
+                                During experiment, we found various problems about our original design. First, the
+                                fusion protein with Fret(hACE2+linker+protease+fret) is far too big to construct and
+                                express in E. coli(over 5000 bp). Second, the cloning of pepN wasn’t too easy, since
+                                the genomic DNA of E. coli horbors more than 4M bp gene sequence. We had quite a
+                                hard time adjusting the PCR condition. Lastly, there were still cleavage sites on
+                                hACE2, which could lead to the inactivation of out fusion protein.
+                            </p>
+                            <p class="indent">
+                                To solve these problems, we later add a his tag on the end of the plasmid to replace
+                                the usage of Fret protein. The result will be demonstrate through western blotting
+                                gel. The mass of protein various before and after protease cleavage. We also adjust
+                                the denaturing time in the three-step cycle of PCR from standard 30 second to 3
+                                minutes, which is meant to fully open the 4M genomic DNA. Lastly, we choose to use
+                                hACE2’s RBD(receptor-binding domain) rather than full length in order to eliminate
+                                possible cleavage site on it.
+                            </p>
+                            <p class="indent">
+                                What’s noteworthy is that we choose KOD as our PCR enzyme in order to prevent
+                                mutation cause by DNA polymerization. In comparision t enzyme Taq, KOD has a better
+                                proofreading accuracy and thermostability. This could provide a better quality for
+                                our engineering product. Moreover, Gidson assemble was used in order to combine
+                                multiple DNA fragments simultaneously, enhancing the efficiency of our experiment.
+                            </p>
                         </div>
                     </div>
                 </section>
                 <hr>
-                <section class="pb-4">
+                <section id="Phase3" class="pb-4">
                     <h4 class="h4 pt-2 pb-3">
-                        Phase three design(Septempber ~)
+                        Phase Three Design(September ~)
                     </h4>
-                    <div class="pb-4">
-                        <div class="row">
-                            <div class="py-3 col-12">
-                                <p class="indent">
-                                    In the final pahse of our experiment, we replaced pepN with pepP after analyzing the
-                                    structure of pepN. This protease is structurally enclosed, making it hard to react
-                                    with big protein substrate such as spike protein. PepP(aminopeptidase P) is another
-                                    protease existing in E. coli strain K12 MG1655. The structure of pepP is a C-like
-                                    bar, which is relatively open and likely to react to larger substrate.
-                                </p>
-                                <p class="indent">
-                                    According to MEROPS’s data, PepP has four cleavage sites on spike protein(326 ~ 333
-                                    IVRFPNIT, 487 ~ 494 NCYFPLQS, 1049 ~ 1056 LMSFPQSA, 1086 ~ 1093 KAHFPREG, between
-                                    F&P). However, pepP left a cleavage site on hACE2’s RBD(protein sequence 364~371
-                                    DMAYAAQP, between Y&A), which could lead to further malfunction problem. As a
-                                    result, we created a point mutation on hACE2, changing sequence YAA into AAA to
-                                    prevent protease reaction. This design ensures the fusion protein intact and
-                                    function normally.
-                                </p>
-                                <p class="indent">
-                                    Finally, in case pepP can’t react with full length spike protein, we created spike
-                                    fragments of the cleavage sites. As research pointed out, pepP can cut small
-                                    fragments of protein(roughly 4.15~4.2 kDa). Each fragment are attached with his tag.
-                                    With western blotting method, we could differentiate different protein after
-                                    reaction.
-                                </p>
-                            </div>
+                    <div class="row">
+                        <div class="py-3 col-12">
+                            <p class="indent">
+                                In the final pahse of our experiment, we replaced pepN with pepP after analyzing the
+                                structure of pepN. This protease is structurally enclosed, making it hard to react
+                                with big protein substrate such as spike protein. PepP(aminopeptidase P) is another
+                                protease existing in E. coli strain K12 MG1655. The structure of pepP is a C-like
+                                bar, which is relatively open and likely to react to larger substrate.
+                            </p>
+                            <p class="indent">
+                                According to MEROPS’s data, PepP has four cleavage sites on spike protein(326 ~ 333
+                                IVRFPNIT, 487 ~ 494 NCYFPLQS, 1049 ~ 1056 LMSFPQSA, 1086 ~ 1093 KAHFPREG, between
+                                F&P). However, pepP left a cleavage site on hACE2’s RBD(protein sequence 364~371
+                                DMAYAAQP, between Y&A), which could lead to further malfunction problem. As a
+                                result, we created a point mutation on hACE2, changing sequence YAA into AAA to
+                                prevent protease reaction. This design ensures the fusion protein intact and
+                                function normally.
+                            </p>
+                            <p class="indent">
+                                Finally, in case pepP can’t react with full length spike protein, we created spike
+                                fragments of the cleavage sites. As research pointed out, pepP can cut small
+                                fragments of protein(roughly 4.15~4.2 kDa). Each fragment are attached with his tag.
+                                With western blotting method, we could differentiate different protein after
+                                reaction.
+                            </p>
                         </div>
                     </div>
                 </section>
