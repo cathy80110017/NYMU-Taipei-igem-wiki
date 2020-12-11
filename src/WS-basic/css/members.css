@@ -10,12 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0;
 }
 
 .info-block p {
-  line-height: 1rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
